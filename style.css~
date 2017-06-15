@@ -29,7 +29,7 @@ body {
 .right_bottom {
 	height:380px;
 	width:300px;
-	overflow:auto;
+	overflow:scroll;
 }
 
 .left_top {
@@ -45,7 +45,7 @@ body {
 .left_bottom {
 	height:380px;
 	width:300px;
-	overflow:auto;
+	overflow:scroll;
 }
 
 .main {
