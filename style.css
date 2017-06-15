@@ -19,11 +19,13 @@ body {
 .right_top {
 	height:200px;
 	width:300px;
+	border-bottom: 1px solid #000;
 }
 
 .right_middle {
 	height:200px;
 	width:300px;
+	border-bottom: 1px solid #000;
 }
 
 .right_bottom {
@@ -35,11 +37,13 @@ body {
 .left_top {
 	height:200px;
 	width:300px;
+	border-bottom: 1px solid #000;
 }
 
 .left_middle {
 	height:200px;
 	width:300px;
+	border-bottom: 1px solid #000;
 }
 
 .left_bottom {
