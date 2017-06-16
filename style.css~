@@ -1,6 +1,6 @@
 body {
 	background-color: #161419;
-	font-family: 'Lato', sans-serif;
+	font-family:"Lato", sans-serif;
 	color:white;
 }
 
@@ -26,7 +26,6 @@ body {
 	height:200px;
 	width:300px;
 	border-bottom: 1px solid #000;
-	overflow:auto;
 }
 
 .right_bottom {
@@ -36,7 +35,7 @@ body {
 }
 
 .left_top {
-	height:180px;
+	height:200px;
 	width:300px;
 	border-bottom: 1px solid #000;
 }
@@ -107,13 +106,6 @@ body {
 
 #perSecond {
 	text-align:right;
-	display: block;
-    font-size: 0.67em;
-    -webkit-margin-before: 2.33em;
-    -webkit-margin-after: 2.33em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 1px;
-    font-weight: bold;
 }
 
 #dateWord {
@@ -122,14 +114,4 @@ body {
 
 #memory {
 	text-align:left;
-}
-
-.h6 {
-	display: block;
-    font-size: 0.67em;
-    -webkit-margin-before: 2.33em;
-    -webkit-margin-after: 2.33em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
 }

@@ -5,13 +5,12 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Lato" rel="stylesheet">
 		<script src="script.js"></script>
 	</head>
 	<body>
 		<div class="right">
 			<div class="right_top">
-				<h2>Fact Holder</h2>
+				right
 			</div>
 			
 			<div class="right_middle">
@@ -27,7 +26,7 @@
 			<div class="left_top">
 				<h1>FILEPLAN 2.0</h1>
 				<div id="date">
-					<span class="h6"><span id="memory">Memory: None</span> | <span id="dateWord">Date: </span><span id="dateCount">0/00/0000</span></span>
+					<h6><span id="memory">Memory: None</span> | <span id="dateWord">Date: </span><span id="dateCount">0/00/0000</span></h6>
 				</div>
 				<div id="byte">
 					<div id="byteCount">
