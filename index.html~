@@ -24,9 +24,8 @@
 		
 		<div class="left">
 			<div class="left_top">
-				<h1>FILEPLAN 2.0</h1>
 				<div id="date">
-					<h6><span id="memory">Memory: None</span> | <span id="dateWord">Date: </span><span id="dateCount">0/00/0000</span></h6>
+					<h6><span id="dateWord">Date: </span><span id="dateCount">0/00/0000</span></h6>
 				</div>
 				<div id="byte">
 					<div id="byteCount">
