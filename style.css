@@ -103,3 +103,13 @@ body {
 #center:hover {
 	background-color:red;
 }
+
+#perSecond {
+	text-align:right;
+}
+
+#dateWord {
+}
+
+#dateCount {
+}
