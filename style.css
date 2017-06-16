@@ -20,6 +20,7 @@ body {
 	height:200px;
 	width:300px;
 	border-bottom: 1px solid #000;
+	overflow:auto;
 }
 
 .right_middle {
@@ -112,7 +113,7 @@ body {
     -webkit-margin-before: 2.33em;
     -webkit-margin-after: 2.33em;
     -webkit-margin-start: 0px;
-    -webkit-margin-end: 1px;
+    -webkit-margin-end: 5px;
     font-weight: bold;
 }
 
