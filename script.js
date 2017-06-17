@@ -14,6 +14,3 @@ $(document).ready(function() {
 	});*/
 });
 
-var lastMod = new Date(document.lastModified);
-
-var lastMod2 = document.getElementById('lastMod').innerHTML = lastMod

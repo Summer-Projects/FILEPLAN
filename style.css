@@ -71,7 +71,10 @@ body {
 .mainScreen {
 	text-align:center;
 	margin-top:400px;
-	/*font-size:50px;*/
+}
+
+.mainScreen h1 {
+	font-size:50px;
 }
 
 #border {
