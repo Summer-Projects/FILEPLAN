@@ -2,6 +2,7 @@ body {
 	background-color: #161419;
 	font-family: 'Lato', sans-serif;
 	color:white;
+	border:1px solid white;
 }
 
 .right {
@@ -58,6 +59,7 @@ body {
 	height:380px;
 	width:300px;
 	overflow:auto;
+	text-align:left;
 }
 
 .main {
@@ -69,12 +71,16 @@ body {
 }
 
 .mainScreen {
-	text-align:center;
-	margin-top:400px;
+	text-align:center;	
 }
 
 .mainScreen h1 {
 	font-size:50px;
+	margin-top:400px;
+}
+
+.mainScreen h4 {
+	margin-bottom:450px;
 }
 
 #border {
@@ -147,6 +153,6 @@ body {
 h2 {
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
+    -webkit-margin-start: 20px;
     -webkit-margin-end: 0px;
 }
