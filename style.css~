@@ -8,18 +8,12 @@ body {
 	float:right;
 	text-align:center;
 	border:1px solid white;
-	/*font-size: 18px;*/
-}
-
-.right h2 {
-	text-align:left;
 }
 
 .left {
 	float:left;
 	text-align:center;
 	border:1px solid white;
-    /*font-size: 18px;*/
 }
 
 .right_top {
@@ -71,7 +65,7 @@ body {
 .mainScreen {
 	text-align:center;
 	margin-top:400px;
-	/*font-size:50px;*/
+	font-size:50px;
 }
 
 #border {
@@ -139,11 +133,4 @@ body {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     font-weight: bold;
-}
-
-h2 {
-	-webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
 }

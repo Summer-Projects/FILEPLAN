@@ -13,7 +13,3 @@ $(document).ready(function() {
 		$('.creditsPage').hide();
 	});*/
 });
-
-var lastMod = new Date(document.lastModified);
-
-var lastMod2 = document.getElementById('lastMod').innerHTML = lastMod
