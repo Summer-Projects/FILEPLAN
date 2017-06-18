@@ -14,3 +14,9 @@ $(document).ready(function() {
 	});*/
 });
 
+function Bytes() {
+	this.bytes = 0,
+	this.upgrades = 0,
+	this.perClick = 1,
+	this.perSec = 0
+}
