@@ -172,7 +172,7 @@ body {
 
 h2 {
 	-webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+    -webkit-margin-after: 5px;
     -webkit-margin-start: 20px;
     -webkit-margin-end: 0px;
 }
@@ -182,5 +182,8 @@ h2 {
 	border-bottom:1px solid white;
 	-webkit-margin-start: 20px;
     -webkit-margin-end: 20px;
-    
+}
+
+#byteUpgradeSec1 img {
+	float:left;
 }
