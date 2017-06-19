@@ -186,4 +186,9 @@ h2 {
 
 #byteUpgradeSec1 img {
 	float:left;
+	-webkit-margin-before: 1px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    background-color:black;
 }
