@@ -61,13 +61,6 @@
 			<div class="left_bottom">
 				<h2>Space Maker</h2>
 				<hr/>
-				<div id="byteUpgradeSec1">
-					******* ********
-					<br/>
-					<br/>
-					<span class="red" id="bytes">15 bytes</span>
-					<!-- Storage Addition -->
-				</div>
 			</div>
 		</div>
 		
