@@ -61,20 +61,12 @@
 			<div class="left_bottom">
 				<h2>Space Maker</h2>
 				<div id="byteUpgradeSec1">
-					<!-- Storage Addition(key) -->
+					<!-- Storage Addition -->
 					<img src="images/Capture3.PNG" />
 					<span id="code1">******* ********</span>
 					<br/>
 					<br/>
 					<span class="red" id="bytes">15 bytes</span>
-				</div>
-				<div id="byteUpgradeSec2">
-					<!-- Addition++ -->
-					<img src="images/file1.PNG" />
-					<span id="code2">**********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes2">100 bytes</span>
 				</div>
 			</div>
 		</div>
