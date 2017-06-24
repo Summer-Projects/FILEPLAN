@@ -1,7 +1,5 @@
-$(document).ready(function() { 
-	$('.settingsPage').hide();
-	$('.creditsPage').hide();
-	/*$('#credit').click(function() { 
+/*$(document).ready(function() {
+	$('#credit').click(function() { 
 		$('.creditsPage').show();
 		$('#credit').html('<i class="fa fa-sign-out" class="credit"></i>');
 		$('#credit').click(function() { 
@@ -11,8 +9,8 @@ $(document).ready(function() {
 	});
 	$('#credit').click(function() { 
 		$('.creditsPage').hide();
-	});*/
-});
+	});
+});*/
 
 function Bytes() {
 	this.bytes = 0,
@@ -21,7 +19,17 @@ function Bytes() {
 	this.perSec = 0
 }
 
+var clicker = new Bytes()
+
+$('.settingsPage').hide();
+$('.creditsPage').hide();
 $('#byteUpgradeSec3').hide();
 $('#byteUpgradeSec4').hide();
 $('#byteUpgradeSec5').hide();
 $('#byteUpgradeSec6').hide();
+
+if(clicker.bytes >= 550) {
+	$('#byteUpgradeSec3').show();
+}else if(clicker.bytes >= 9950) {
+	$('#byteUpgradeSec4').show();
+}
