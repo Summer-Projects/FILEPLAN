@@ -20,8 +20,3 @@ function Bytes() {
 	this.perClick = 1,
 	this.perSec = 0
 }
-
-$('#byteUpgradeSec3').hide();
-$('#byteUpgradeSec4').hide();
-$('#byteUpgradeSec5').hide();
-$('#byteUpgradeSec6').hide();
