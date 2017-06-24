@@ -70,8 +70,8 @@ img {
 }
 
 .left_bottom {
-	height:397px;
-	width:300px;
+	height: 380px;
+    width: 300px;
 	overflow:auto;
 	text-align:left;
 }
@@ -322,6 +322,35 @@ h2 {
 }
 
 #code5 {
+	font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#byteUpgradeSec6 {
+	/*border-top:1px solid white;*/
+	border-bottom:1px solid white;
+	-webkit-margin-start: 20px;
+    -webkit-margin-end: 20px;
+    -webkit-margin-before: 5px;
+    -webkit-margin-after: 5px
+}
+
+#byteUpgradeSec6 img {
+	float:left;
+	-webkit-margin-before: 3px;
+    -webkit-margin-after: 3px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    background-color:black;
+}
+
+.red {
+	color:red;
+	font-size:11px;
+}
+
+#code6 {
 	font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
