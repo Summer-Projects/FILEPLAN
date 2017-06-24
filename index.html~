@@ -92,14 +92,6 @@
 					<br/>
 					<span class="red" id="bytes4">10,000 bytes</span>
 				</div>
-				<div id="byteUpgradeSec5">
-					<!-- Files+++ -->
-					<img src="images/files.PNG" />
-					<span id="code5">********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes5">150,000 bytes</span>
-				</div>
 			</div>
 		</div>
 		
