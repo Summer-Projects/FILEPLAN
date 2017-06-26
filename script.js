@@ -46,10 +46,8 @@ var dateFunc = function() {
     },1000);
 }
 
-var showUpgrades = function() {
-	if(clicker.bytes >= 0) {
-		var code1 = document.getElementById('code1').innerHTML = "Storage Addition";
-	}else if(clicker.bytes >= 70) {
-		var code2 = document.getElementById('code2').innerHTML = "Addition++";
-	}
+if(clicker.bytes >= 0) {
+	var code1 = document.getElementById('code1').innerHTML = "Storage Addition";
+}else if(clicker.bytes >= 70) {
+	var code2 = document.getElementById('code2').innerHTML = "Addition++";
 }
