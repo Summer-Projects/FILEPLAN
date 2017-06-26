@@ -10,7 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Lato" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body>
+	<body onload="dateFunc(); showUpgrades();">
 		<div class="right">
 			<div class="right_top">
 				<h2>Fact Holder</h2>
@@ -36,7 +36,7 @@
 				<h1>FILEPLAN 1.0</h1>
 				<hr/>
 				<div id="date">
-					<span class="h6"><span id="memory">Memory: None</span> | <span id="dateWord">Date: </span><span id="dateCount">0/00/0000</span></span>
+					<span class="h6"><span id="memory">Memory: None</span> | <span id="dateWord">Date: </span><span id="dateCount"></span></span>
 				</div>
 				<div id="byte">
 					<div id="byteCount">
@@ -50,7 +50,7 @@
 			<div class="left_middle">
 				<div id="border">
 					<div id="border2">
-						<div id="border3">
+						<div id="border3" onclick="spaceGen();">
 							<div id="center">
 								
 							</div>

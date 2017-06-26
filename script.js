@@ -35,5 +35,21 @@ if(clicker.bytes >= 550) {
 }*/
 
 var spaceGen = function() {
-	var count = document.getElementById('');
+	var count = document.getElementById('bytes');
+	clicker.bytes += 1
+	count.innerHTML = "Bytes: " + clicker.bytes + ""
+}
+
+var dateFunc = function() {
+	setInterval(function() {
+        document.getElementById('dateCount').innerHTML = Date();
+    },1000);
+}
+
+var showUpgrades = function() {
+	if(clicker.bytes >= 0) {
+		var code1 = document.getElementById('code1').innerHTML = "Storage Addition";
+	}else if(clicker.bytes >= 70) {
+		var code2 = document.getElementById('code2').innerHTML = "Addition++";
+	}
 }

@@ -49,7 +49,7 @@ img {
 }
 
 .left_top {
-	height:200px;
+	height:183px;
 	width:300px;
 	border-bottom: 1px solid #000;
 }
