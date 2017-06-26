@@ -355,11 +355,4 @@ h2 {
     font-weight: 700;
     letter-spacing: 1px;
 }
-/*
-8 upgrades min
-
-stats:
-upgrades: 6:8
-idea lister: 0:8
-all products: 2:6
-*/
+/*8 upgrades min*/
