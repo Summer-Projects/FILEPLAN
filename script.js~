@@ -29,11 +29,7 @@ $('#byteUpgradeSec5').hide();
 $('#byteUpgradeSec6').hide();
 
 if(clicker.bytes >= 550) {
-    $('#byteUpgradeSec3').show();
-}/*else if(clicker.bytes >= 9950) {
+	$('#byteUpgradeSec3').show();
+}else if(clicker.bytes >= 9950) {
 	$('#byteUpgradeSec4').show();
-}*/
-
-var spaceGen = function() {
-	var count = document.getElementById('');
 }
