@@ -44,13 +44,13 @@ var showUpgrades = function() {
 	if(clicker.bytes >= 1000) {
 		$('#byteUpgradeSec6').show();
 	}
-}
+};
 
 var dateFunc = function() {
 	setInterval(function() {
         document.getElementById('dateCount').innerHTML = Date();
     },1000);
-}
+};
 
 var showCode = function() {
 	if(clicker.bytes >= 0) {
@@ -61,6 +61,26 @@ var showCode = function() {
 	if(clicker.bytes >= 70) {
 		var code2 = document.getElementById('code2');
 		code2.innerHTML = "Addition++";
+	}
+	
+	if(clicker.bytes >= 550) {
+		var code3 = document.getElementById('code3');
+		code3.innerHTML = "File system+++";
+	}
+	
+	if(clicker.bytes >= 9950) {
+		var code4 = document.getElementById('code4');
+		code4.innerHTML = "Search bytes";
+	}
+	
+	if(clicker.bytes >= 149950) {
+		var code5 = document.getElementById('code5');
+		code5.innerHTML = "Files+++";
+	}
+	
+	if(clicker.bytes >= 4999950) {
+		var code6 = document.getElementById('code6');
+		code6.innerHTML = "Byte-o-rama";
 	}
 };
 
