@@ -4,7 +4,6 @@
 		<title>FILEPLAN</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="script.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Lato" rel="stylesheet">
@@ -107,7 +106,7 @@
 					<span id="code6">***********</span>
 					<br/>
 					<br/>
-					<span class="red" id="bytes6">5,000,000 bytes</span>
+					<span class="red" id="bytes6">150,000 bytes</span>
 				</div>
 			</div>
 		</div>

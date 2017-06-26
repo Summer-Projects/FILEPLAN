@@ -28,22 +28,16 @@ $('#byteUpgradeSec4').hide();
 $('#byteUpgradeSec5').hide();
 $('#byteUpgradeSec6').hide();
 
-var showUpgrades = function() {
-	if(clicker.bytes >= 350) {
-		$('#byteUpgradeSec3').show();
-	}
-	
-	if(clicker.bytes >= 1000) {
-		$('#byteUpgradeSec4').show();
-	}
-	
-	if(clicker.bytes >= 100000) {
-		$('#byteUpgradeSec5').show();
-	}
-	
-	if(clicker.bytes >= 1000) {
-		$('#byteUpgradeSec6').show();
-	}
+if(clicker.bytes >= 550) {
+    $('#byteUpgradeSec3').show();
+}/*else if(clicker.bytes >= 9950) {
+	$('#byteUpgradeSec4').show();
+}*/
+
+var spaceGen = function() {
+	var count = document.getElementById('bytes');
+	clicker.bytes += 1
+	count.innerHTML = "Bytes: " + clicker.bytes + ""
 }
 
 var dateFunc = function() {
@@ -52,25 +46,8 @@ var dateFunc = function() {
     },1000);
 }
 
-var showCode = function() {
-	if(clicker.bytes >= 0) {
-		var code1 = document.getElementById('code1')
-		code1.innerHTML = "Storage Addition";
-	}
-
-	if(clicker.bytes >= 70) {
-		var code2 = document.getElementById('code2');
-		code2.innerHTML = "Addition++";
-	}
-};
-
-showCode();
-showUpgrades();
-
-var spaceGen = function() {
-	var count = document.getElementById('bytes');
-	clicker.bytes += 1
-	count.innerHTML = "Bytes: " + clicker.bytes + ""
-	showCode();
-	showUpgrades();
+if(clicker.bytes >= 0) {
+	var code1 = document.getElementById('code1').innerHTML = "Storage Addition";
+}else if(clicker.bytes >= 70) {
+	var code2 = document.getElementById('code2').innerHTML = "Addition++";
 }
