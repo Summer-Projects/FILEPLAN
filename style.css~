@@ -355,32 +355,6 @@ h2 {
     font-weight: 700;
     letter-spacing: 1px;
 }
-
-#byteUpgradeSec7 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec7 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
-#code7 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-
 /*
 8 upgrades min
 

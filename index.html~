@@ -109,14 +109,6 @@
 					<br/>
 					<span class="red" id="bytes6">5,000,000 bytes</span>
 				</div>
-				<div id="byteUpgradeSec7">
-					<!-- Searching and create -->
-					<img src="images/searchAnd.PNG" />
-					<span id="code7">********* *** ******</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes7">5,000,000 bytes</span>
-				</div>
 			</div>
 		</div>
 		
