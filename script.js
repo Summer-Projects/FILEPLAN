@@ -104,12 +104,26 @@ var showCode = function() {
 	}
 };
 
+var invalid = function() {
+	alert("Sorry! You don't have enough space to buy a space upgrade!");
+}
+
+var upgrade1 = function() {
+	if(clicker.bytes >= 100) {
+		clicker.perClick += 1;
+		clicker.bytes -= 100;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
 showCode();
 showUpgrades();
 
 var spaceGen = function() {
 	var count = document.getElementById('bytes');
-	clicker.bytes += 1
+	clicker.bytes += clicker.perClick
 	count.innerHTML = "Bytes: " + clicker.bytes + ""
 	showCode();
 	showUpgrades();
