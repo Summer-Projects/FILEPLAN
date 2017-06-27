@@ -27,8 +27,6 @@ $('#byteUpgradeSec3').hide();
 $('#byteUpgradeSec4').hide();
 $('#byteUpgradeSec5').hide();
 $('#byteUpgradeSec6').hide();
-$('#byteUpgradeSec7').hide();
-$('#byteUpgradeSec8').hide();
 
 var showUpgrades = function() {
 	if(clicker.bytes >= 350) {
@@ -43,16 +41,8 @@ var showUpgrades = function() {
 		$('#byteUpgradeSec5').show();
 	}
 	
-	if(clicker.bytes >= 4000000) {
+	if(clicker.bytes >= 1000) {
 		$('#byteUpgradeSec6').show();
-	}
-	
-	if(clicker.bytes >= 50000000) {
-		$('#byteUpgradeSec7').show();
-	}
-	
-	if(clicker.bytes >= 100000000) {
-		$('#byteUpgradeSec8').show();
 	}
 };
 
@@ -91,16 +81,6 @@ var showCode = function() {
 	if(clicker.bytes >= 4999950) {
 		var code6 = document.getElementById('code6');
 		code6.innerHTML = "Byte-o-rama";
-	}
-	
-	if(clicker.bytes >= 74999950) {
-		var code5 = document.getElementById('code5');
-		code5.innerHTML = "Searching and create";
-	}
-	
-	if(clicker.bytes >= 129999950) {
-		var code6 = document.getElementById('code6');
-		code6.innerHTML = "Searching and create++";
 	}
 };
 

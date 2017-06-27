@@ -345,6 +345,11 @@ h2 {
     background-color:black;
 }
 
+.red {
+	color:red;
+	font-size:11px;
+}
+
 #code6 {
 	font-size: 18px;
     font-weight: 700;
@@ -375,38 +380,12 @@ h2 {
     letter-spacing: 1px;
 }
 
-#byteUpgradeSec8 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec8 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-    width:60px;
-}
-
-#code8 {
-	font-size: 18px;
-    font-weight: 70px;
-    letter-spacing: 1px;
-}
 
 /*
 8 upgrades min
 
-Grades: 1.0-4.0
-
 stats:
-upgrades: 8:8, 3.7
-idea lister: 0:8, ___
-all products: 2:6, ___
+upgrades: 6:8
+idea lister: 0:8
+all products: 2:6
 */
