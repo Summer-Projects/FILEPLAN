@@ -97,7 +97,7 @@ var showCode = function() {
 };
 
 var invalid = function() {
-	alert("Sorry! You don"t have enough space to buy a space upgrade!");
+	alert("Sorry! You don't have enough space to buy a space upgrade!");
 }
 
 
