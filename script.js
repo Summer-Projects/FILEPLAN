@@ -107,8 +107,8 @@ showUpgrades();
 
 var spaceGen = function() {
 	var count = document.getElementById("bytes");
-	clicker.bytes += clicker.perClick
-	count.innerHTML = "Bytes: " + clicker.bytes + ""
+	clicker.bytes += clicker.perClick;
+	count.innerHTML = "Bytes: " + clicker.bytes + "";
 	showCode();
 	showUpgrades();
-}
+};
