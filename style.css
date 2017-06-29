@@ -181,36 +181,12 @@ h2 {
     -webkit-margin-end: 0px;
 }
 
-#byteUpgradeSec1 {
-	border-top:1px solid white;
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec1 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
 .red {
 	color:red;
 	font-size:11px;
 }
 
-#code1 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#byteUpgradeSec2 {
+.byteUpgrades {
 	/*border-top:1px solid white;*/
 	border-bottom:1px solid white;
 	-webkit-margin-start: 20px;
@@ -219,171 +195,7 @@ h2 {
     -webkit-margin-after: 5px
 }
 
-#byteUpgradeSec2 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
-.red {
-	color:red;
-	font-size:11px;
-}
-
-#code2 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#byteUpgradeSec3 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec3 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
-.red {
-	color:red;
-	font-size:11px;
-}
-
-#code3 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#byteUpgradeSec4 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec4 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
-.red {
-	color:red;
-	font-size:11px;
-}
-
-#code4 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#byteUpgradeSec5 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec5 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
-.red {
-	color:red;
-	font-size:11px;
-}
-
-#code5 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#byteUpgradeSec6 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec6 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
-#code6 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#byteUpgradeSec7 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec7 img {
-	float:left;
-	-webkit-margin-before: 3px;
-    -webkit-margin-after: 3px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    background-color:black;
-}
-
-#code7 {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#byteUpgradeSec8 {
-	/*border-top:1px solid white;*/
-	border-bottom:1px solid white;
-	-webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
-    -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
-}
-
-#byteUpgradeSec8 img {
+.byteUpgrades img {
 	float:left;
 	-webkit-margin-before: 3px;
     -webkit-margin-after: 3px;
@@ -393,7 +205,7 @@ h2 {
     width:60px;
 }
 
-#code8 {
+.codes {
 	font-size: 18px;
     font-weight: 70px;
     letter-spacing: 1px;
