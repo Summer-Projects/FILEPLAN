@@ -102,7 +102,7 @@ var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
 };
 
-var upgrade1 = function() {
+document.getElementById("border3").innerHTML = function() {
 	if(clicker.bytes >= 100) {
 		clicker.perClick += 1;
 		clicker.bytes -= 100;
