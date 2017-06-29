@@ -16,10 +16,11 @@ function Bytes() {
 	this.bytes = 0,
 	this.upgrades = 0,
 	this.perClick = 1,
-	this.perSec = 0
+	this.perSec = 0;
 }
 
-var clicker = new Bytes()
+var clicker = new Bytes();
+
 $(document).ready(function() { 
 	$(".settingsPage").hide();
 	$(".creditsPage").hide();
@@ -99,7 +100,7 @@ var showCode = function() {
 
 var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
-}
+};
 
 var upgrade1 = function() {
 	if(clicker.bytes >= 100) {
