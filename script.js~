@@ -20,16 +20,15 @@ function Bytes() {
 }
 
 var clicker = new Bytes()
-$(document).ready(function() { 
-	$(".settingsPage").hide();
-	$(".creditsPage").hide();
-	$("#byteUpgradeSec3").hide();
-	$("#byteUpgradeSec4").hide();
-	$("#byteUpgradeSec5").hide();
-	$("#byteUpgradeSec6").hide();
-	$("#byteUpgradeSec7").hide();
-	$("#byteUpgradeSec8").hide();
-});
+
+$(".settingsPage").hide();
+$(".creditsPage").hide();
+$("#byteUpgradeSec3").hide();
+$("#byteUpgradeSec4").hide();
+$("#byteUpgradeSec5").hide();
+$("#byteUpgradeSec6").hide();
+$("#byteUpgradeSec7").hide();
+$("#byteUpgradeSec8").hide();
 
 var showUpgrades = function() {
 	if(clicker.bytes >= 350) {
@@ -101,18 +100,10 @@ var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
 }
 
-var upgrade1 = function() {
-	if(clicker.bytes >= 100) {
-		clicker.perClick += 1;
-		clicker.bytes -= 100;
-		clicker.upgrades += 1;
-	}else{
-		invalid();
-	}
-};
+
 
 showCode();
-/*showUpgrades();*/
+showUpgrades();
 
 var spaceGen = function() {
 	var count = document.getElementById("bytes");
