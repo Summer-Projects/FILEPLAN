@@ -12,6 +12,15 @@
 	});
 });*/
 
+function Bytes() {
+	this.bytes = 0,
+	this.upgrades = 0,
+	this.perClick = 1,
+	this.perSec = 0;
+}
+
+var clicker = new Bytes();
+
 $(document).ready(function() { 
 	$(".settingsPage").hide();
 	$(".creditsPage").hide();
@@ -22,15 +31,6 @@ $(document).ready(function() {
 	$("#byteUpgradeSec7").hide();
 	$("#byteUpgradeSec8").hide();
 });
-
-function Bytes() {
-	this.bytes = 0,
-	this.upgrades = 0,
-	this.perClick = 1,
-	this.perSec = 0;
-}
-
-var clicker = new Bytes();
 
 var showUpgrades = function() {
 	if(clicker.bytes >= 350) {
