@@ -68,7 +68,7 @@ var showCode = function() {
 	if(clicker.bytes >= 0) {
 		var code1 = document.getElementById("code1").innerHTML = "Storage Addition";
 	}
-
+	
 	if(clicker.bytes >= 70) {
 		var code2 = document.getElementById("code2").innerHTML = "Addition++";
 	}
