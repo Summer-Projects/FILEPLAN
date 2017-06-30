@@ -102,10 +102,28 @@ var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
 };
 
+var spaceGenPerSec = function() {
+	setInterval(function() {
+		var second = document.getElementById("perSecond").innerHTML = "per second: " + clicker.perSec + "";
+		clicker.bytes += clicker.perSec;
+		var perSec = document.getElementById('bytes').innerHTML = "Bytes: " + clicker.bytes + "";
+	},1000);
+};
+
 var upgrade1 = function() {
 	if(clicker.bytes >= 15) {
-		clicker.perClick += 0.5;
+		clicker.perSec += 0.1;
 		clicker.bytes -= 15;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade2 = function() {
+	if(clicker.bytes >= 100) {
+		clicker.perSec += 1;
+		clicker.bytes -= 100;
 		clicker.upgrades += 1;
 	}else{
 		invalid();
@@ -114,6 +132,7 @@ var upgrade1 = function() {
 
 /*showCode();
 showUpgrades();*/
+spaceGenPerSec();
 
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
