@@ -131,8 +131,8 @@ var upgrade2 = function() {
 };
 
 /*showCode();
-showUpgrades();*/
-spaceGenPerSec();
+showUpgrades();
+spaceGenPerSec();*/
 
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
