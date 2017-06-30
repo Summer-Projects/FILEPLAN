@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="script.js"></script>
 	</head>
-	<body onload="dateFunc(); showUpgrades(); showCode();">
+	<body onload="dateFunc(); showUpgrades();">
 		<div class="right">
 			<div class="right_top">
 				<h2>Fact Holder</h2>
@@ -50,7 +50,7 @@
 			<div class="left_middle">
 				<div id="border">
 					<div id="border2">
-						<div id="border3" onclick="spaceGen();">
+						<div id="border3">
 							<div id="center">
 								
 							</div>
@@ -117,7 +117,7 @@
 					<br/>
 					<span class="red" id="bytes7">75,000,000 bytes</span>
 				</div>
-				<div id="byteUpgradeSec8" class="byteUpgrades" onload="ateFunc(); showUpgrades(); showCode();">
+				<div id="byteUpgradeSec8" class="byteUpgrades">
 					<!-- Searching and create++ -->
 					<img src="images/searchAnd++.PNG" />
 					<span id="code8" class="codes">********* *** ********</span>

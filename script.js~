@@ -103,17 +103,17 @@ var invalid = function() {
 };
 
 var upgrade1 = function() {
-	if(clicker.bytes >= 15) {
-		clicker.perClick += 0.5;
-		clicker.bytes -= 15;
+	if(clicker.bytes >= 100) {
+		clicker.perClick += 1;
+		clicker.bytes -= 100;
 		clicker.upgrades += 1;
 	}else{
 		invalid();
 	}
 };
 
-/*showCode();
-showUpgrades();*/
+showCode();
+/*showUpgrades();*/
 
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
