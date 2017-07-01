@@ -186,8 +186,32 @@ h2 {
 	font-size:11px;
 }
 
-.byteUpgrades {
+.byteUpgrade1 {
 	border-top:1px solid white;
+	border-bottom:1px solid white;
+	-webkit-margin-start: 20px;
+    -webkit-margin-end: 20px;
+    -webkit-margin-before: 5px;
+    -webkit-margin-after: 5px
+}
+
+.byteUpgrade1 img {
+	float:left;
+	-webkit-margin-before: 3px;
+    -webkit-margin-after: 3px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    background-color:black;
+}
+
+.code1 {
+	font-size: 18px;
+    font-weight: 70px;
+    letter-spacing: 1px;
+}
+
+.byteUpgrades {
+/* 	border-top:1px solid white; */
 	border-bottom:1px solid white;
 	-webkit-margin-start: 20px;
     -webkit-margin-end: 20px;
