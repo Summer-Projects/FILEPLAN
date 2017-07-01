@@ -61,7 +61,7 @@
 				
 			<div class="left_bottom">
 				<h2>Space Maker</h2>
-				<div id="byteUpgradeSec1" onclick="upgrade1()">
+				<div id="byteUpgradeSec1" onclick="upgrade1()" class="byteUpgrades">
 					<!-- Storage Addition(key) -->
 					<img src="images/Capture3.PNG" />
 					<span id="code1" class="codes">******* ********</span>

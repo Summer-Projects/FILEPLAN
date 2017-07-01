@@ -186,7 +186,7 @@ h2 {
 	font-size:11px;
 }
 
-#byteUpgradeSec1 {
+.byteUpgrade1 {
 	border-top:1px solid white;
 	border-bottom:1px solid white;
 	-webkit-margin-start: 20px;
@@ -195,7 +195,7 @@ h2 {
     -webkit-margin-after: 5px
 }
 
-#byteUpgradeSec1 img {
+.byteUpgrade1 img {
 	float:left;
 	-webkit-margin-before: 3px;
     -webkit-margin-after: 3px;
@@ -204,7 +204,7 @@ h2 {
     background-color:black;
 }
 
-#code1 {
+.code1 {
 	font-size: 18px;
     font-weight: 70px;
     letter-spacing: 1px;
