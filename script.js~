@@ -106,7 +106,7 @@ var spaceGenPerSec = function() {
 	setInterval(function() {
 		var second = document.getElementById("perSecond").innerHTML = "per second: " + clicker.perSec + "";
 		clicker.bytes += clicker.perSec;
-		var perSec = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
+		var perSec = document.getElementById('bytes').innerHTML = "Bytes: " + clicker.bytes + "";
 	},1000);
 };
 
