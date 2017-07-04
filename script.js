@@ -1,17 +1,3 @@
-/*$(document).ready(function() {
-	$("#credit").click(function() { 
-		$(".creditsPage").show();
-		$("#credit").html("<i class="fa fa-sign-out" class="credit"></i>");
-		$("#credit").click(function() { 
-			$("credits").hide();
-			$("#credit").html("<i class="material-icons" id="credit">info_outline</i>");
-		});
-	});
-	$("#credit").click(function() { 
-		$(".creditsPage").hide();
-	});
-});*/
-
 $(document).ready(function() { 
 	$(".settingsPage").hide();
 	$(".creditsPage").hide();
@@ -112,7 +98,7 @@ var spaceGenPerSec = function() {
 
 var upgrade1 = function() {
 	if(clicker.bytes >= 15) {
-		clicker.perSec += 0.1;
+		clicker.perSec += 1;
 		clicker.bytes -= 15;
 		clicker.upgrades += 1;
 	}else{
@@ -122,13 +108,74 @@ var upgrade1 = function() {
 
 var upgrade2 = function() {
 	if(clicker.bytes >= 100) {
-		clicker.perSec += 1;
+		clicker.perSec += 7;
 		clicker.bytes -= 100;
 		clicker.upgrades += 1;
 	}else{
 		invalid();
 	}
 };
+
+var upgrade3 = function() {
+	if(clicker.bytes >= 600) {
+		clicker.perSec += 8;
+		clicker.bytes -= 600;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade4 = function() {
+	if(clicker.bytes >= 10000) {
+		clicker.perSec += 45;
+		clicker.bytes -= 10000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade5 = function() {
+	if(clicker.bytes >= 150000) {
+		clicker.perSec += 230;
+		clicker.bytes -= 150000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade6 = function() {
+	if(clicker.bytes >= 1600000) {
+		clicker.perSec += 1600;
+		clicker.bytes -= 1600000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade7 = function() {
+	if(clicker.bytes >= 21000000) {
+		clicker.perSec += 8000;
+		clicker.bytes -= 21000000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade8 = function() {
+	if(clicker.bytes >= 110000000) {
+		clicker.perSec += 32000;
+		clicker.bytes -= 110000000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
 
 /*showCode();
 showUpgrades();*/
@@ -139,4 +186,47 @@ var spaceGen = function() {
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 	showCode();
 	showUpgrades();
+};
+
+// Right Panel
+
+// Clicker update
+
+var idea1 = function() {
+	if(clicker.bytes >= 200) {
+		clicker.bytes -= 200;
+		clicker.perClick += 3
+	}else{
+		invaild();
+	}
+};
+
+//Clicker update++
+var idea2 = function() {
+	if(clicker.bytes >= 500) {
+		clicker.bytes -= 500;
+		clicker.perClick += 100
+	}else{
+		invaild();
+	}
+};
+
+//Clicker update+++
+var idea3 = function() {
+	if(clicker.bytes >= 10000) {
+		clicker.bytes -= 10000;
+		clicker.perClick += 10000
+	}else{
+		invaild();
+	}
+};
+
+//Clicker update++++
+var idea3 = function() {
+	if(clicker.bytes >= 100000) {
+		clicker.bytes -= 100000;
+		clicker.perClick += 1000000
+	}else{
+		invaild();
+	}
 };
