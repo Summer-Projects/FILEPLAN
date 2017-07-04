@@ -152,7 +152,7 @@ var upgrade4 = function() {
 
 var upgrade5 = function() {
 	if(clicker.bytes >= 150000) {
-		clicker.perSec += 100;
+		clicker.perSec += 230;
 		clicker.bytes -= 150000;
 		clicker.upgrades += 1;
 	}else{
@@ -189,6 +189,7 @@ var upgrade8 = function() {
 		invalid();
 	}
 };
+
 
 /*showCode();
 showUpgrades();*/
