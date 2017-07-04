@@ -109,13 +109,13 @@
 					<br/>
 					<span class="red" id="bytes6">1,600,000 bytes</span>
 				</div>
-				<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade7();">
+				<div id="byteUpgradeSec7" class="byteUpgrades">
 					<!-- Searching and create -->
 					<img src="images/searchAnd.PNG" />
 					<span id="code7" class="codes">********* *** ******</span>
 					<br/>
 					<br/>
-					<span class="red" id="bytes7">21,000,000 bytes</span>
+					<span class="red" id="bytes7">75,000,000 bytes</span>
 				</div>
 				<div id="byteUpgradeSec8" class="byteUpgrades" onload="dateFunc(); showUpgrades(); showCode();">
 					<!-- Searching and create++ -->
@@ -123,7 +123,7 @@
 					<span id="code8" class="codes">********* *** ********</span>
 					<br/>
 					<br/>
-					<span class="red" id="bytes8">110,000,000 bytes</span>
+					<span class="red" id="bytes8">130,000,000 bytes</span>
 				</div>
 			</div>
 		</div>
