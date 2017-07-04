@@ -112,7 +112,7 @@ var spaceGenPerSec = function() {
 
 var upgrade1 = function() {
 	if(clicker.bytes >= 15) {
-		clicker.perSec += 0.1;
+		clicker.perSec += 1;
 		clicker.bytes -= 15;
 		clicker.upgrades += 1;
 	}else{
@@ -122,7 +122,7 @@ var upgrade1 = function() {
 
 var upgrade2 = function() {
 	if(clicker.bytes >= 100) {
-		clicker.perSec += 1;
+		clicker.perSec += 7;
 		clicker.bytes -= 100;
 		clicker.upgrades += 1;
 	}else{
