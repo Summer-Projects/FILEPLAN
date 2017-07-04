@@ -214,8 +214,7 @@ h2 {
 	-webkit-margin-start: 20px;
     -webkit-margin-end: 20px;
     -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px;
-    text-align:left;
+    -webkit-margin-after: 5px
 }
 
 .byteUpgrades img {
