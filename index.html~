@@ -77,7 +77,7 @@
 					<br/>
 					<span class="red" id="bytes2">100 bytes</span>
 				</div>
-				<div id="byteUpgradeSec3" class="byteUpgrades" onclick="upgrade3();">
+				<div id="byteUpgradeSec3" class="byteUpgrades">
 					<!-- File system+++ -->
 					<img src="images/fileSys.PNG" />
 					<span id="code3" class="codes">**** *********</span>

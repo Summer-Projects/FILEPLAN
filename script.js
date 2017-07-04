@@ -130,15 +130,15 @@ var upgrade2 = function() {
 	}
 };
 
-/*var upgrade2 = function() {
+var upgrade3 = function() {
 	if(clicker.bytes >= 600) {
-		clicker.perSec += 1;
-		clicker.bytes -= 100;
+		clicker.perSec += 10;
+		clicker.bytes -= 600;
 		clicker.upgrades += 1;
 	}else{
 		invalid();
 	}
-};*/
+};
 
 /*showCode();
 showUpgrades();*/
