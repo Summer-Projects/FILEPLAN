@@ -1,17 +1,3 @@
-/*$(document).ready(function() {
-	$("#credit").click(function() { 
-		$(".creditsPage").show();
-		$("#credit").html("<i class="fa fa-sign-out" class="credit"></i>");
-		$("#credit").click(function() { 
-			$("credits").hide();
-			$("#credit").html("<i class="material-icons" id="credit">info_outline</i>");
-		});
-	});
-	$("#credit").click(function() { 
-		$(".creditsPage").hide();
-	});
-});*/
-
 $(document).ready(function() { 
 	$(".settingsPage").hide();
 	$(".creditsPage").hide();
@@ -200,4 +186,47 @@ var spaceGen = function() {
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 	showCode();
 	showUpgrades();
+};
+
+// Right Panel
+
+// Clicker update
+
+var idea1 = function() {
+	if(clicker.bytes >= 200) {
+		clicker.bytes -= 200;
+		clicker.perClick += 3
+	}else{
+		invaild();
+	}
+};
+
+//Clicker update++
+var idea2 = function() {
+	if(clicker.bytes >= 500) {
+		clicker.bytes -= 500;
+		clicker.perClick += 100
+	}else{
+		invaild();
+	}
+};
+
+//Clicker update+++
+var idea3 = function() {
+	if(clicker.bytes >= 10000) {
+		clicker.bytes -= 10000;
+		clicker.perClick += 10000
+	}else{
+		invaild();
+	}
+};
+
+//Clicker update++++
+var idea3 = function() {
+	if(clicker.bytes >= 100000) {
+		clicker.bytes -= 100000;
+		clicker.perClick += 1000000
+	}else{
+		invaild();
+	}
 };
