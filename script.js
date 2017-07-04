@@ -162,7 +162,7 @@ var upgrade5 = function() {
 
 var upgrade6 = function() {
 	if(clicker.bytes >= 5000000) {
-		clicker.perSec += 500;
+		clicker.perSec += 1600;
 		clicker.bytes -= 5000000;
 		clicker.upgrades += 1;
 	}else{
