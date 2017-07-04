@@ -101,13 +101,13 @@
 					<br/>
 					<span class="red" id="bytes5">150,000 bytes</span>
 				</div>
-				<div id="byteUpgradeSec6" class="byteUpgrades" onclick="upgrade6();">
+				<div id="byteUpgradeSec6" class="byteUpgrades">
 					<!-- Byte-o-rama -->
 					<img src="images/editing.PNG" />
 					<span id="code6" class="codes">***********</span>
 					<br/>
 					<br/>
-					<span class="red" id="bytes6">1,600,000 bytes</span>
+					<span class="red" id="bytes6">5,000,000 bytes</span>
 				</div>
 				<div id="byteUpgradeSec7" class="byteUpgrades">
 					<!-- Searching and create -->
