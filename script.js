@@ -171,9 +171,9 @@ var upgrade6 = function() {
 };
 
 var upgrade7 = function() {
-	if(clicker.bytes >= 75000000) {
-		clicker.perSec += 4000;
-		clicker.bytes -= 75000000;
+	if(clicker.bytes >= 21000000) {
+		clicker.perSec += 8000;
+		clicker.bytes -= 21000000;
 		clicker.upgrades += 1;
 	}else{
 		invalid();
@@ -181,9 +181,9 @@ var upgrade7 = function() {
 };
 
 var upgrade8 = function() {
-	if(clicker.bytes >= 130000000) {
+	if(clicker.bytes >= 110000000) {
 		clicker.perSec += 32000;
-		clicker.bytes -= 130000000;
+		clicker.bytes -= 110000000;
 		clicker.upgrades += 1;
 	}else{
 		invalid();
