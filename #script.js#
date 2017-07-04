@@ -142,7 +142,7 @@ var upgrade3 = function() {
 
 var upgrade4 = function() {
 	if(clicker.bytes >= 10000) {
-		clicker.perSec += ___;
+		clicker.perSec += 45;
 		clicker.bytes -= 10000;
 		clicker.upgrades += 1;
 	}else{

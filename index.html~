@@ -85,7 +85,7 @@
 					<br/>
 					<span class="red" id="bytes3">600 bytes</span>
 				</div>
-				<div id="byteUpgradeSec4" class="byteUpgrades" onclick="upgrade4();">
+				<div id="byteUpgradeSec4" class="byteUpgrades">
 					<!-- Search bytes -->
 					<img src="images/search.PNG" />
 					<span id="code4" class="codes">****** *****</span>
