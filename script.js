@@ -152,8 +152,38 @@ var upgrade4 = function() {
 
 var upgrade5 = function() {
 	if(clicker.bytes >= 150000) {
-		clicker.perSec += ___;
+		clicker.perSec += 100;
 		clicker.bytes -= 150000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade6 = function() {
+	if(clicker.bytes >= 5000000) {
+		clicker.perSec += 100;
+		clicker.bytes -= 5000000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade7 = function() {
+	if(clicker.bytes >= 75000000) {
+		clicker.perSec += 100;
+		clicker.bytes -= 75000000;
+		clicker.upgrades += 1;
+	}else{
+		invalid();
+	}
+};
+
+var upgrade8 = function() {
+	if(clicker.bytes >= 130000000) {
+		clicker.perSec += 100;
+		clicker.bytes -= 130000000;
 		clicker.upgrades += 1;
 	}else{
 		invalid();
