@@ -188,7 +188,7 @@ var spaceGen = function() {
 	showUpgrades();
 };
 
-// Right Panel
+// Idea lister 0:20
 
 // Clicker update
 
