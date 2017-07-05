@@ -244,7 +244,3 @@ upgrades you can click on: 3:8, ___
 idea lister: 0:20 ___
 all products: 2:6, ___
 */
-
-#filePlot {
-	font-size:12px;
-}
