@@ -267,6 +267,9 @@ var idea4 = function() {
 	}
 };
 
+$("#hide").hide();
+
 var removeLoader = function() {
-	
+	$("#hide").show();
+    document.getElementById("loader").removeAttribute("class");
 };

@@ -12,7 +12,7 @@
 		<meta charset="utf-8">
 		<script src="script.js"></script>
 	</head>
-	<body onload="dateFunc(); showUpgrades(); showCode();">
+	<body onload="dateFunc(); showUpgrades(); showCode(); removeLoader();">
 		<div class="right">
 			<div class="right_top">
 				<h2>Fact Holder</h2>
@@ -30,37 +30,41 @@
 			<div class="right_bottom">
 				<h2>Idea Lister</h2>
 				<hr/>
-				<div id="byteUpgradeIdea1" onclick="idea1();" class="byteUpgrades">
-					<!-- Clicker update -->
-					<img src="images/bytesUpgrades.PNG" />
-					<span id="idea1" class="codes">******* ******</span>
-					<br/>
-					<br/>
-					<span class="red" id="space1">200 bytes</span>
-				</div>
-				<div id="byteUpgradeIdea2" onclick="idea2();" class="byteUpgrades">
-					<!-- Clicker update++ -->
-					<img src="images/bytesUpgrades.PNG" />
-					<span id="idea2" class="codes">******* ********</span>
-					<br/>
-					<br/>
-					<span class="red" id="space2">500 bytes</span>
-				</div>
-				<div id="byteUpgradeIdea3" onclick="idea3();" class="byteUpgrades">
-					<!-- Clicker update+++ -->
-					<img src="images/bytesUpgrades.PNG" />
-					<span id="idea3" class="codes">******* *********</span>
-					<br/>
-					<br/>
-					<span class="red" id="space3">1,000 bytes</span>
-				</div>
-				<div id="byteUpgradeIdea4" onclick="idea4();" class="byteUpgrades">
-					<!-- Clicker update++++ -->
-					<img src="images/bytesUpgrades.PNG" />
-					<span id="idea4" class="codes">******* **********</span>
-					<br/>
-					<br/>
-					<span class="red" id="space4">10,000 bytes</span>
+				<div class="loader">
+					<div id="hide">
+						<div id="byteUpgradeIdea1" onclick="idea1();" class="byteUpgrades">
+							<!-- Clicker update -->
+							<img src="images/bytesUpgrades.PNG" />
+							<span id="idea1" class="codes">******* ******</span>
+							<br/>
+							<br/>
+							<span class="red" id="space1">200 bytes</span>
+						</div>
+						<div id="byteUpgradeIdea2" onclick="idea2();" class="byteUpgrades">
+							<!-- Clicker update++ -->
+							<img src="images/bytesUpgrades.PNG" />
+							<span id="idea2" class="codes">******* ********</span>
+							<br/>
+							<br/>
+							<span class="red" id="space2">500 bytes</span>
+						</div>
+						<div id="byteUpgradeIdea3" onclick="idea3();" class="byteUpgrades">
+							<!-- Clicker update+++ -->
+							<img src="images/bytesUpgrades.PNG" />
+							<span id="idea3" class="codes">******* *********</span>
+							<br/>
+							<br/>
+							<span class="red" id="space3">1,000 bytes</span>
+						</div>
+						<div id="byteUpgradeIdea4" onclick="idea4();" class="byteUpgrades">
+							<!-- Clicker update++++ -->
+							<img src="images/bytesUpgrades.PNG" />
+							<span id="idea4" class="codes">******* **********</span>
+							<br/>
+							<br/>
+							<span class="red" id="space4">10,000 bytes</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -95,69 +99,73 @@
 				
 			<div class="left_bottom">
 				<h2>Space Maker</h2>
-				<div id="byteUpgradeSec1" onclick="upgrade1()">
-					<!-- Storage Addition(key) -->
-					<img src="images/Capture3.PNG" />
-					<span id="code1" class="codes">******* ********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes">15 bytes</span>
-				</div>
-				<div id="byteUpgradeSec2" class="byteUpgrades" onclick="upgrade2();">
-					<!-- Addition++ -->
-					<img src="images/file1.PNG" />
-					<span id="code2" class="codes">**********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes2">100 bytes</span>
-				</div>
-				<div id="byteUpgradeSec3" class="byteUpgrades" onclick="upgrade3();">
-					<!-- File system+++ -->
-					<img src="images/fileSys.PNG" />
-					<span id="code3" class="codes">**** *********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes3">600 bytes</span>
-				</div>
-				<div id="byteUpgradeSec4" class="byteUpgrades" onclick="upgrade4();">
-					<!-- Search bytes -->
-					<img src="images/search.PNG" />
-					<span id="code4" class="codes">****** *****</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes4">10,000 bytes</span>
-				</div>
-				<div id="byteUpgradeSec5" class="byteUpgrades" onclick="upgrade5();">
-					<!-- Files+++ -->
-					<img src="images/files.PNG" />
-					<span id="code5" class="codes">********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes5">150,000 bytes</span>
-				</div>
-				<div id="byteUpgradeSec6" class="byteUpgrades" onclick="upgrade6();">
-					<!-- Byte-o-rama -->
-					<img src="images/editing.PNG" />
-					<span id="code6" class="codes">***********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes6">1,600,000 bytes</span>
-				</div>
-				<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade7();">
-					<!-- Searching and create -->
-					<img src="images/searchAnd.PNG" />
-					<span id="code7" class="codes">********* *** ******</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes7">21,000,000 bytes</span>
-				</div>
-				<div id="byteUpgradeSec8" class="byteUpgrades" onload="dateFunc(); showUpgrades(); showCode();" onclick="upgrade8();">
-					<!-- Searching and create++ -->
-					<img src="images/searchAnd++.PNG" />
-					<span id="code8" class="codes">********* *** ********</span>
-					<br/>
-					<br/>
-					<span class="red" id="bytes8">110,000,000 bytes</span>
+				<div class="loader">
+					<div id="hide">
+						<div id="byteUpgradeSec1" onclick="upgrade1()">
+							<!-- Storage Addition(key) -->
+							<img src="images/Capture3.PNG" />
+							<span id="code1" class="codes">******* ********</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes">15 bytes</span>
+						</div>
+						<div id="byteUpgradeSec2" class="byteUpgrades" onclick="upgrade2();">
+							<!-- Addition++ -->
+							<img src="images/file1.PNG" />
+							<span id="code2" class="codes">**********</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes2">100 bytes</span>
+						</div>
+						<div id="byteUpgradeSec3" class="byteUpgrades" onclick="upgrade3();">
+							<!-- File system+++ -->
+							<img src="images/fileSys.PNG" />
+							<span id="code3" class="codes">**** *********</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes3">600 bytes</span>
+						</div>
+						<div id="byteUpgradeSec4" class="byteUpgrades" onclick="upgrade4();">
+							<!-- Search bytes -->
+							<img src="images/search.PNG" />
+							<span id="code4" class="codes">****** *****</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes4">10,000 bytes</span>
+						</div>
+						<div id="byteUpgradeSec5" class="byteUpgrades" onclick="upgrade5();">
+							<!-- Files+++ -->
+							<img src="images/files.PNG" />
+							<span id="code5" class="codes">********</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes5">150,000 bytes</span>
+						</div>
+						<div id="byteUpgradeSec6" class="byteUpgrades" onclick="upgrade6();">
+							<!-- Byte-o-rama -->
+							<img src="images/editing.PNG" />
+							<span id="code6" class="codes">***********</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes6">1,600,000 bytes</span>
+						</div>
+						<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade7();">
+							<!-- Searching and create -->
+							<img src="images/searchAnd.PNG" />
+							<span id="code7" class="codes">********* *** ******</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes7">21,000,000 bytes</span>
+						</div>
+						<div id="byteUpgradeSec8" class="byteUpgrades" onload="dateFunc(); showUpgrades(); showCode();" onclick="upgrade8();">
+							<!-- Searching and create++ -->
+							<img src="images/searchAnd++.PNG" />
+							<span id="code8" class="codes">********* *** ********</span>
+							<br/>
+							<br/>
+							<span class="red" id="bytes8">110,000,000 bytes</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
