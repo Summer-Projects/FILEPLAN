@@ -91,18 +91,6 @@ var showCode = function() {
 	if(clicker.bytes >= 100) {
 		var idea1 = document.getElementById("idea1").innerHTML = "Clicker update";
 	}
-	
-	if(clicker.bytes >= 400) {
-		var idea2 = document.getElementById("idea2").innerHTML = "Clicker update++";
-	}
-	
-	if(clicker.bytes >= 900) {
-		var idea3 = document.getElementById("idea3").innerHTML = "Clicker update+++";
-	}
-	
-	if(clicker.bytes >= 9000) {
-		var idea4 = document.getElementById("idea4").innerHTML = "Clicker update++++";
-	}
 };
 
 var invalid = function() {
