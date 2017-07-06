@@ -36,7 +36,7 @@
 					<br/>
 					<span class="red" id="space1">200 bytes</span>
 				</div>
-				<div id="byteUpgradeIdea2" onclick="idea2();" class="byteUpgrades">
+				<div id="byteUpgradeIdea2" onclick="" class="byteUpgrades">
 					<!-- Clicker update++ -->
 					<img src="images/bytesUpgrades.PNG" />
 					<span id="idea2" class="codes">******* ********</span>
@@ -44,7 +44,7 @@
 					<br/>
 					<span class="red" id="space2">500 bytes</span>
 				</div>
-				<div id="byteUpgradeIdea3" onclick="idea3();" class="byteUpgrades">
+				<div id="byteUpgradeIdea3" onclick="" class="byteUpgrades">
 					<!-- Clicker update+++ -->
 					<img src="images/bytesUpgrades.PNG" />
 					<span id="idea3" class="codes">******* *********</span>
@@ -52,7 +52,7 @@
 					<br/>
 					<span class="red" id="space3">1,000 bytes</span>
 				</div>
-				<div id="byteUpgradeIdea4" onclick="idea4();" class="byteUpgrades">
+				<div id="byteUpgradeIdea4" onclick="" class="byteUpgrades">
 					<!-- Clicker update++++ -->
 					<img src="images/bytesUpgrades.PNG" />
 					<span id="idea4" class="codes">******* **********</span>
