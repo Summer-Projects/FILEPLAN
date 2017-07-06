@@ -90,7 +90,6 @@ var showCode = function() {
 	
 	if(clicker.bytes >= 100) {
 		var idea1 = document.getElementById("idea1").innerHTML = "Clicker update";
-	}
 };
 
 var invalid = function() {

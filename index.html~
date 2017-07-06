@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="script.js"></script>
 	</head>
-	<body onload="dateFunc(); showUpgrades(); showCode();">
+	<body onload="dateFunc(); showUpgrades(); showCode(); ">
 		<div class="right">
 			<div class="right_top">
 				<h2>Fact Holder</h2>
@@ -28,7 +28,7 @@
 			<div class="right_bottom">
 				<h2>Idea Lister</h2>
 				<hr/>
-				<div id="byteUpgradeIdea1" onclick="idea1();" class="byteUpgrades">
+				<div id="byteUpgradeIdea1" onclick="" class="byteUpgrades">
 					<!-- Clicker update -->
 					<img src="images/bytesUpgrades.PNG" />
 					<span id="idea1" class="codes">******* ******</span>
