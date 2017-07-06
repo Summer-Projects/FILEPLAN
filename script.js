@@ -8,6 +8,9 @@ $(document).ready(function() {
 	$("#byteUpgradeSec7").hide();
 	$("#byteUpgradeSec8").hide();
 	$("#byteUpgradeIdea1").hide();
+	$("#byteUpgradeIdea2").hide();
+	$("#byteUpgradeIdea3").hide();
+	$("#byteUpgradeIdea4").hide();
 });
 
 function Bytes() {
@@ -46,6 +49,18 @@ var showUpgrades = function() {
 	
 	if(clicker.bytes >= 70) {
 		$("#byteUpgradeIdea1").show();
+	}
+	
+	if(clicker.bytes >= 200) {
+		$("#byteUpgradeIdea2").show();
+	}
+	
+	if(clicker.bytes >= 800) {
+		$("#byteUpgradeIdea3").show();
+	}
+	
+	if(clicker.bytes >= 8000) {
+		$("#byteUpgradeIdea4").show();
 	}
 };
 
@@ -243,7 +258,7 @@ var idea3 = function() {
 };
 
 //Clicker update++++
-var idea3 = function() {
+var idea4 = function() {
 	if(clicker.bytes >= 100000) {
 		clicker.bytes -= 100000;
 		clicker.perClick += 1000000
