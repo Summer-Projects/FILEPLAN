@@ -11,6 +11,7 @@ $(document).ready(function() {
 	$("#byteUpgradeIdea2").hide();
 	$("#byteUpgradeIdea3").hide();
 	$("#byteUpgradeIdea4").hide();
+	$("#hide").hide();
 });
 
 function Bytes() {
@@ -267,7 +268,7 @@ var idea4 = function() {
 	}
 };
 
-$("#hide").hide();
+
 
 var removeLoader = function() {
 	$("#hide").show();
