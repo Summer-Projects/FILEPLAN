@@ -173,10 +173,6 @@
 		<div class="main">
 			<div class="credits">
 				<div class="icons">
-					<select name="settings" multiple="false">
-						<option id="settings">Settings</option>
-						<option id="home">Home</option>
-					<
 					<i class="material-icons" id="credit">info_outline</i>
 					<i class="material-icons" id="setting">settings</i>
 				</div>
