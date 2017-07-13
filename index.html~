@@ -176,10 +176,10 @@
 				<div class="icons">
 					<!--<i class="material-icons" id="credit">info_outline</i>
 					<i class="material-icons" id="setting">settings</i>-->
-					<!--<select>
+					<select>
 						<option id="settings">Settings</option>
 						<option id="home" selected>Home</option>
-						<option id="credits">Credits</option>-->
+						<option id="credits">Credits</option>
 					</select>
 				</div>
 				<div class="settingsPage">
