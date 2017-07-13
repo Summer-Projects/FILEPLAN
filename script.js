@@ -296,4 +296,6 @@ var removeLoader = function() {
 };
 */
 
-var 
+var filePlot = function() {
+	var filePlotWords = ["Hello", "I am the friendly computer", "Very nice to meet you", "Bah! We have talked long enough already", "Get us some storage! using the generator over there"]
+};
