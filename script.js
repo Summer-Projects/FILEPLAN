@@ -297,5 +297,8 @@ var removeLoader = function() {
 */
 
 var filePlot = function() {
-	var filePlotWords = ["Hello", "I am the friendly computer", "Very nice to meet you", "Bah! We have talked long enough already", "Get us some storage! Using the generator ⬅️ over there ⬅️"]
+	var filePlotWords = ["Hello", "I am the friendly computer", "Very nice to meet you", "Bah! We have talked long enough already", "Get us some storage! Using the generator over there"];
+	setInterval({
+		document.getElementById("filePlot");
+	},1000);
 };
