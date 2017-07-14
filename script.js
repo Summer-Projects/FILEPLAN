@@ -40,7 +40,7 @@ function Bytes() {
 	this.perClick = 1,
 	this.perSec = 0;
 }
-
+//test
 var clicker = new Bytes();
 
 var showUpgrades = function() {
