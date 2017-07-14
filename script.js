@@ -289,13 +289,6 @@ var idea4 = function() {
 };
 
 /*
-
-var removeLoader = function() {
-	$("#hide").show();
-    document.getElementById("loader").removeAttribute("class");
-};
-
-
 var filePlot = function() {
 	var filePlotWords = ["Hello", "I am the friendly computer", "Very nice to meet you", "Bah! We have talked long enough already", "Get us some storage! Using the generator over there"];
 	setInterval({
