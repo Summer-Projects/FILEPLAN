@@ -12,26 +12,6 @@ $(document).ready(function() {
 	$("#byteUpgradeIdea3").hide();
 	$("#byteUpgradeIdea4").hide();
 	$("#hide").hide();
-	/*$("select").change(function() {
-		$("#mainScreen").hide();
-		$("#creditsPage").hide();
-		$("#settingsPage").hide();
-		$("#home:selected").each(function() {
-			$("#home").show();
-			$("#creditsPage").hide();
-			$("#settingsPage").hide();
-		});
-		$("#credits:selected").each(function() {
-			$("#creditsPage").show();
-			$("#mainScreen").hide();
-			$("#settingsPage").hide();
-		});
-		$("#settings:selected").each(function() {
-			$("#settingsPage").show();
-			$("#creditsPage").hide();
-			$("#mainScreen").hide();
-		});
-	}).trigger( "change" );*/
 });
 
 function Bytes() {
