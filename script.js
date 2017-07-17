@@ -120,6 +120,12 @@ var showCode = function() {
 		var idea4 = document.getElementById("idea4").innerHTML = "Clicker update++++";
 	}
 };
+/*
+var showCode = function(bytes,id,text) {
+	if(clicker.bytes >= bytes) {
+		var code = document.getElementById(id).innerHTML = text;
+	}
+};*/
 
 var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
@@ -221,7 +227,8 @@ spaceGenPerSec();
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
-	showCode();
+	/*showCode(0,"code1", "Storage Addition")
+	showCode(70,"code2", "Addition++")*/
 	showUpgrades();
 };
 
