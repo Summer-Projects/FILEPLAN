@@ -234,8 +234,6 @@ h2 {
 }
 
 /*
-8 upgrades min
-
 Grades: 1.0-4.0
 
 stats:
@@ -247,4 +245,8 @@ all products: 2:6, ___
 
 #filePlot {
 	font-size:12px;
+}
+
+#bordertop {
+	font-style:italic;
 }
