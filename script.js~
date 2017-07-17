@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$("#byteUpgradeIdea2").hide();
 	$("#byteUpgradeIdea3").hide();
 	$("#byteUpgradeIdea4").hide();
-	$("#byteUpgradeIdea5").hide();
+	$("#hide").hide();
 });
 
 function Bytes() {
@@ -62,9 +62,6 @@ var showUpgrades = function() {
 	
 	if(clicker.bytes >= 8000) {
 		$("#byteUpgradeIdea4").show();
-	}
-	if(clicker.bytes >= 900000000) {
-		$("#byteUpgradeIdea5").show();
 	}
 };
 
@@ -121,10 +118,6 @@ var showCode = function() {
 	
 	if(clicker.bytes >= 9000) {
 		var idea4 = document.getElementById("idea4").innerHTML = "Clicker update++++";
-	}
-	
-	if(clicker.bytes >= 950000000) {
-		var idea5 = document.getElementById("idea5").innerHTML = "Super Computer";
 	}
 };
 /*
@@ -248,7 +241,7 @@ var idea1 = function() {
 		clicker.bytes -= 200;
 		clicker.perClick += 3
 	}else{
-		invalid();
+		invaild();
 	}
 };
 
@@ -258,7 +251,7 @@ var idea2 = function() {
 		clicker.bytes -= 500;
 		clicker.perClick += 100
 	}else{
-		invalid();
+		invaild();
 	}
 };
 
@@ -268,7 +261,7 @@ var idea3 = function() {
 		clicker.bytes -= 10000;
 		clicker.perClick += 10000
 	}else{
-		invalid();
+		invaild();
 	}
 };
 
@@ -278,17 +271,6 @@ var idea4 = function() {
 		clicker.bytes -= 100000;
 		clicker.perClick += 1000000
 	}else{
-		invalid();
-	}
-};
-
-// Everthing times five
-var idea5 = function() {
-	if(clicker.bytes >= 1000000000) {
-		clicker.bytes -= 1000000000;
-		clicker.perClick *= 5;
-		clicker.perSec *= 5;
-	}else{
-		invalid();
+		invaild();
 	}
 };
