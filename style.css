@@ -214,7 +214,8 @@ h2 {
 	-webkit-margin-start: 20px;
     -webkit-margin-end: 20px;
     -webkit-margin-before: 5px;
-    -webkit-margin-after: 5px
+    -webkit-margin-after: 5px;
+    text-align:left;
 }
 
 .byteUpgrades img {
@@ -237,7 +238,11 @@ Grades: 1.0-4.0
 
 stats:
 upgrades: 8:8, 3.7
-upgrades you can click on: 3:8, ___
+upgrades you can click on: 8:8, 4.0
 idea lister: 0:20 ___
 all products: 2:6, ___
 */
+
+#filePlot {
+	font-size:12px;
+}

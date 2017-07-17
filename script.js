@@ -7,6 +7,11 @@ $(document).ready(function() {
 	$("#byteUpgradeSec6").hide();
 	$("#byteUpgradeSec7").hide();
 	$("#byteUpgradeSec8").hide();
+	$("#byteUpgradeIdea1").hide();
+	$("#byteUpgradeIdea2").hide();
+	$("#byteUpgradeIdea3").hide();
+	$("#byteUpgradeIdea4").hide();
+	$("#hide").hide();
 });
 
 function Bytes() {
@@ -41,6 +46,22 @@ var showUpgrades = function() {
 	
 	if(clicker.bytes >= 100000000) {
 		$("#byteUpgradeSec8").show();
+	}
+	
+	if(clicker.bytes >= 70) {
+		$("#byteUpgradeIdea1").show();
+	}
+	
+	if(clicker.bytes >= 200) {
+		$("#byteUpgradeIdea2").show();
+	}
+	
+	if(clicker.bytes >= 800) {
+		$("#byteUpgradeIdea3").show();
+	}
+	
+	if(clicker.bytes >= 8000) {
+		$("#byteUpgradeIdea4").show();
 	}
 };
 
@@ -81,6 +102,22 @@ var showCode = function() {
 	
 	if(clicker.bytes >= 129999950) {
 		var code8 = document.getElementById("code6").innerHTML = "Searching and create++";
+	}
+	
+	if(clicker.bytes >= 100) {
+		var idea1 = document.getElementById("idea1").innerHTML = "Clicker update";
+	}
+	
+	if(clicker.bytes >= 400) {
+		var idea2 = document.getElementById("idea2").innerHTML = "Clicker update++";
+	}
+	
+	if(clicker.bytes >= 900) {
+		var idea3 = document.getElementById("idea3").innerHTML = "Clicker update+++";
+	}
+	
+	if(clicker.bytes >= 9000) {
+		var idea4 = document.getElementById("idea4").innerHTML = "Clicker update++++";
 	}
 };
 /*
@@ -124,7 +161,7 @@ var upgrade2 = function() {
 
 var upgrade3 = function() {
 	if(clicker.bytes >= 600) {
-		clicker.perSec += 8;
+		clicker.perSec += 42;
 		clicker.bytes -= 600;
 		clicker.upgrades += 1;
 	}else{
@@ -134,7 +171,7 @@ var upgrade3 = function() {
 
 var upgrade4 = function() {
 	if(clicker.bytes >= 10000) {
-		clicker.perSec += 45;
+		clicker.perSec += 100;
 		clicker.bytes -= 10000;
 		clicker.upgrades += 1;
 	}else{
@@ -195,7 +232,7 @@ var spaceGen = function() {
 	showUpgrades();
 };
 
-// Right Panel
+// Idea lister 0:20
 
 // Clicker update
 
@@ -229,7 +266,7 @@ var idea3 = function() {
 };
 
 //Clicker update++++
-var idea3 = function() {
+var idea4 = function() {
 	if(clicker.bytes >= 100000) {
 		clicker.bytes -= 100000;
 		clicker.perClick += 1000000
