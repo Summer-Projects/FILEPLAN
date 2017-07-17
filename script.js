@@ -236,6 +236,7 @@ var spaceGen = function() {
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 	/*showCode(0,"code1", "Storage Addition")
 	showCode(70,"code2", "Addition++")*/
+	showCode();
 	showUpgrades();
 };
 
