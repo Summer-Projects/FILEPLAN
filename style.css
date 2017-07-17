@@ -246,3 +246,7 @@ all products: 2:6, ___
 #filePlot {
 	font-size:12px;
 }
+
+#bordertop {
+	border-top:1px solid white;
+}
