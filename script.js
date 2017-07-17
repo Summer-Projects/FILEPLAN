@@ -1,6 +1,6 @@
 $(document).ready(function() { 
 	$(".settingsPage").hide();
-	$(".creditsPage").hide();
+	/*$(".creditsPage").hide();*/
 	$("#byteUpgradeSec3").hide();
 	$("#byteUpgradeSec4").hide();
 	$("#byteUpgradeSec5").hide();
