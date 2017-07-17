@@ -104,7 +104,7 @@ var showCode = function() {
 	}
 	
 	if(clicker.bytes >= 129999950) {
-		var code8 = document.getElementById("code8").innerHTML = "Searching and create++";
+		var code8 = document.getElementById("code8").innerHTML = "Searching and create+";
 	}
 	
 	if(clicker.bytes >= 100) {
