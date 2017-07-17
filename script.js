@@ -50,7 +50,7 @@ var dateFunc = function() {
     },1000);
 };
 
-/*var showCode = function() {
+var showCode = function() {
 	if(clicker.bytes >= 0) {
 		var code1 = document.getElementById("code1").innerHTML = "Storage Addition";
 	}
@@ -82,13 +82,13 @@ var dateFunc = function() {
 	if(clicker.bytes >= 129999950) {
 		var code8 = document.getElementById("code6").innerHTML = "Searching and create++";
 	}
-};*/
-
+};
+/*
 var showCode = function(bytes,id,text) {
 	if(clicker.bytes >= bytes) {
 		var code = document.getElementById(id).innerHTML = text;
 	}
-};
+};*/
 
 var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
