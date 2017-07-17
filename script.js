@@ -50,7 +50,7 @@ var dateFunc = function() {
     },1000);
 };
 
-var showCode = function() {
+/*var showCode = function() {
 	if(clicker.bytes >= 0) {
 		var code1 = document.getElementById("code1").innerHTML = "Storage Addition";
 	}
@@ -81,6 +81,12 @@ var showCode = function() {
 	
 	if(clicker.bytes >= 129999950) {
 		var code8 = document.getElementById("code6").innerHTML = "Searching and create++";
+	}
+};*/
+
+var showCode = function(bytes,id,text) {
+	if(clicker.bytes >= bytes) {
+		var code = document.getElementById(id).innerHTML = text;
 	}
 };
 
@@ -184,7 +190,8 @@ spaceGenPerSec();
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
-	showCode();
+	/*showCode(0,"code1", "Storage Addition")
+	showCode(70,"code2", "Addition++")*/
 	showUpgrades();
 };
 
