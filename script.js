@@ -100,11 +100,11 @@ var showCode = function() {
 	}
 	
 	if(clicker.bytes >= 74999950) {
-		var code7 = document.getElementById("code5").innerHTML = "Searching and create";
+		var code7 = document.getElementById("code7").innerHTML = "Searching and create";
 	}
 	
 	if(clicker.bytes >= 129999950) {
-		var code8 = document.getElementById("code6").innerHTML = "Searching and create++";
+		var code8 = document.getElementById("code8").innerHTML = "Searching and create++";
 	}
 	
 	if(clicker.bytes >= 100) {
