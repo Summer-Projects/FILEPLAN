@@ -21,10 +21,6 @@ function Bytes() {
 	this.perSec = 0;
 }
 
-var upgradeMoney1 = 100;
-var upgradeMoney2 = 600;
-var upgradeMoney3 = 10000;
-
 var clicker = new Bytes();
 
 var showUpgrades = function() {
