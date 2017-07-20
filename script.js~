@@ -1,7 +1,6 @@
 $(document).ready(function() { 
 	$(".settingsPage").hide();
 	$(".creditsPage").hide();
-	$("#upgrade1").hide();
 	$("#byteUpgradeSec3").hide();
 	$("#byteUpgradeSec4").hide();
 	$("#byteUpgradeSec5").hide();
@@ -13,10 +12,6 @@ $(document).ready(function() {
 	$("#byteUpgradeIdea3").hide();
 	$("#byteUpgradeIdea4").hide();
 	$("#byteUpgradeIdea5").hide();
-	
-	$("#byteUpgradeSec1").hover(function() { 
-		
-	});
 });
 
 function Bytes() {
