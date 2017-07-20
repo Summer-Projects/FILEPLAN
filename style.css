@@ -252,10 +252,12 @@ all products: 2:6, ___
 	font-style:italic;
 }
 
+
 #upgrade1 {
 	display:none;
 }
 
-#byteUpgradeSec1:hover < #upgrade1 {
+#byteUpgradeSec1:hover > #upgrade1 {
 	display:block;
 }
+
