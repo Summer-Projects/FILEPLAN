@@ -3,6 +3,12 @@ $(document).ready(function() {
 	$(".creditsPage").hide();
 	$("#upgrade1").hide();
 	$("#upgrade2").hide();
+	$("#upgrade3").hide();
+	$("#upgrade4").hide();
+	$("#upgrade5").hide();
+	$("#upgrade6").hide();
+	$("#upgrade7").hide();
+	$("#upgrade8").hide();
 	$("#byteUpgradeSec3").hide();
 	$("#byteUpgradeSec4").hide();
 	$("#byteUpgradeSec5").hide();
@@ -25,6 +31,42 @@ $(document).ready(function() {
 		$("#upgrade2").show();
 	}, function() { 
 		$("#upgrade2").hide();
+	});
+	
+	$("#byteUpgradeSec3").hover(function() { 
+		$("#upgrade3").show();
+	}, function() { 
+		$("#upgrade3").hide();
+	});
+	
+	$("#byteUpgradeSec4").hover(function() { 
+		$("#upgrade4").show();
+	}, function() { 
+		$("#upgrade4").hide();
+	});
+	
+	$("#byteUpgradeSec5").hover(function() { 
+		$("#upgrade5").show();
+	}, function() { 
+		$("#upgrade5").hide();
+	});
+	
+	$("#byteUpgradeSec6").hover(function() { 
+		$("#upgrade6").show();
+	}, function() { 
+		$("#upgrade6").hide();
+	});
+	
+	$("#byteUpgradeSec7").hover(function() { 
+		$("#upgrade7").show();
+	}, function() { 
+		$("#upgrade7").hide();
+	});
+	
+	$("#byteUpgradeSec8").hover(function() { 
+		$("#upgrade8").show();
+	}, function() { 
+		$("#upgrade8").hide();
 	});
 });
 
