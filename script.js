@@ -393,8 +393,3 @@ var idea5 = function() {
 		invalid();
 	}
 };
-
-/*
-var changeMoney = function(id, money) {
-	money *= 2;
-}*/
