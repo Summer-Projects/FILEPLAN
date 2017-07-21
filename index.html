@@ -63,7 +63,7 @@
 				<hr/>
 				<div class="loader">
 					<div id="hide">
-						<div id="byteUpgradeIdea1" onclick="idea1();" class="byteUpgrades">
+						<div id="byteUpgradeIdea1" onclick="idea1(), appendText('Clicker Update', 200);" class="byteUpgrades">
 							<!-- Clicker update -->
 							<img src="images/bytesUpgrades.PNG" />
 							<span id="idea1" class="codes">******* ******</span>
@@ -71,7 +71,7 @@
 							<br/>
 							<span class="red" id="space1">200 bytes</span>
 						</div>
-						<div id="byteUpgradeIdea2" onclick="idea2();" class="byteUpgrades">
+						<div id="byteUpgradeIdea2" onclick="idea2(), appendText('Clicker Update++', 500);" class="byteUpgrades">
 							<!-- Clicker update++ -->
 							<img src="images/bytesUpgrades.PNG" />
 							<span id="idea2" class="codes">******* ********</span>
@@ -79,7 +79,7 @@
 							<br/>
 							<span class="red" id="space2">500 bytes</span>
 						</div>
-						<div id="byteUpgradeIdea3" onclick="idea3();" class="byteUpgrades">
+						<div id="byteUpgradeIdea3" onclick="idea3(), appendText('Clicker Update+++', 1000);" class="byteUpgrades">
 							<!-- Clicker update+++ -->
 							<img src="images/bytesUpgrades.PNG" />
 							<span id="idea3" class="codes">******* *********</span>
@@ -188,7 +188,7 @@
 							<br/>
 							<span class="red" id="bytes6">1,600,000 bytes</span>
 						</div>
-						<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade7();">
+						<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade7(), appendText('Searching and create', 21000000);">
 							<!-- Searching and create -->
 							<img src="images/searchAnd.PNG" />
 							<span id="code7" class="codes">********* *** ******</span>
@@ -196,7 +196,7 @@
 							<br/>
 							<span class="red" id="bytes7">21,000,000 bytes</span>
 						</div>
-						<div id="byteUpgradeSec8" class="byteUpgrades" onload="dateFunc(); showUpgrades(); showCode();" onclick="upgrade8();">
+						<div id="byteUpgradeSec8" class="byteUpgrades" onclick="upgrade8(), appendText('Searching and create+', 110000000);">
 							<!-- Searching and create+ -->
 							<img src="images/searchAnd++.PNG" />
 							<span id="code8" class="codes">********* *** ********</span>
