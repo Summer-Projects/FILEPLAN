@@ -367,7 +367,7 @@ var idea2 = function() {
 var idea3 = function() {
 	if(clicker.bytes >= 10000) {
 		clicker.bytes -= 10000;
-		clicker.perClick += 10000
+		clicker.perClick += 10000;
 	}else{
 		invalid();
 	}
@@ -377,7 +377,7 @@ var idea3 = function() {
 var idea4 = function() {
 	if(clicker.bytes >= 100000) {
 		clicker.bytes -= 100000;
-		clicker.perClick += 1000000
+		clicker.perClick += 1000000;
 	}else{
 		invalid();
 	}
