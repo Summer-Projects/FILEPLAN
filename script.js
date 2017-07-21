@@ -90,6 +90,14 @@ var upgradeMoney3 = 10000;
 
 var clicker = new Bytes();
 
+function appendText() {
+    var txt1 = "<p>Text.</p>";              // Create text with HTML
+    var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+    var txt3 = document.createElement("p");
+    txt3.innerHTML = "Text.";               // Create text with DOM
+    $("#filePlot").append(txt1, txt2, txt3);     // Append new elements
+}
+
 var showUpgrades = function() {
 	if(clicker.bytes >= 350) {
 		$("#byteUpgradeSec3").show();

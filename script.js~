@@ -9,6 +9,7 @@ $(document).ready(function() {
 	$("#upgrade6").hide();
 	$("#upgrade7").hide();
 	$("#upgrade8").hide();
+	$("#upgrade9").hide();
 	$("#byteUpgradeSec3").hide();
 	$("#byteUpgradeSec4").hide();
 	$("#byteUpgradeSec5").hide();
@@ -67,6 +68,12 @@ $(document).ready(function() {
 		$("#upgrade8").show();
 	}, function() { 
 		$("#upgrade8").hide();
+	});
+	
+	$("#byteUpgradeIdea1").hover(function() { 
+		$("#upgrade9").show();
+	}, function() { 
+		$("#upgrade9").hide();
 	});
 });
 
