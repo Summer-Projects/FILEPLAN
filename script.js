@@ -10,6 +10,10 @@ $(document).ready(function() {
 	$("#upgrade7").hide();
 	$("#upgrade8").hide();
 	$("#upgrade9").hide();
+	$("#upgrade10").hide();
+	$("#upgrade11").hide();
+	$("#upgrade12").hide();
+	$("#upgrade13").hide();
 	$("#byteUpgradeSec3").hide();
 	$("#byteUpgradeSec4").hide();
 	$("#byteUpgradeSec5").hide();
@@ -74,6 +78,30 @@ $(document).ready(function() {
 		$("#upgrade9").show();
 	}, function() { 
 		$("#upgrade9").hide();
+	});
+	
+	$("#byteUpgradeIdea2").hover(function() { 
+		$("#upgrade10").show();
+	}, function() { 
+		$("#upgrade10").hide();
+	});
+	
+	$("#byteUpgradeIdea3").hover(function() { 
+		$("#upgrade11").show();
+	}, function() { 
+		$("#upgrade11").hide();
+	});
+	
+	$("#byteUpgradeIdea4").hover(function() { 
+		$("#upgrade12").show();
+	}, function() { 
+		$("#upgrade12").hide();
+	});
+	
+	$("#byteUpgradeIdea5").hover(function() { 
+		$("#upgrade13").show();
+	}, function() { 
+		$("#upgrade13").hide();
 	});
 });
 
@@ -366,6 +394,7 @@ var idea5 = function() {
 	}
 };
 
+/*
 var changeMoney = function(id, money) {
 	money *= 2;
-}
+}*/
