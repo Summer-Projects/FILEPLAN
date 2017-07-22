@@ -120,7 +120,7 @@ var clicker = new Bytes();
 var count = 0;
 
 function appendText(space, bytes) {
-	if(clicker.cookies < 0) {
+	if(clicker.cookies <= 0) {
 		return false;
 	}else{
 		count += 1
