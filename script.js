@@ -134,9 +134,9 @@ function appendText(space, bytes) {
 		total = 0
 		var txt1 = "<p>You have " + clicker.bytes + " bytes left over after buying " + count + " upgrades.</p>" ;
 		$("#filePlot").append(txt1);
+	}else{
+		return false;
 	}
-		
-	
 };
 
 var showUpgrades = function() {
