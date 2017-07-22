@@ -117,9 +117,12 @@ var upgradeMoney2 = 600;
 var upgradeMoney3 = 10000;
 
 var clicker = new Bytes();
+var count = 0;
 
 function appendText(space, bytes) {
-    var txt1 = "<p>You bought a " + space +  " for " + bytes + " bytes, and you have " + clicker.bytes + " bytes remaing.</p>";
+	count += 1
+	
+    var txt1 = "<p>You bought a " + space +  " for " + bytes + " bytes, and you have " + clicker.bytes + " bytes remaing. You have bought " + count + " upgrades."</p>";
     $("#filePlot").append(txt1);     // Append new elements
 }
 
