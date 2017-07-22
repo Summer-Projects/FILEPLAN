@@ -118,25 +118,16 @@ var upgradeMoney3 = 10000;
 
 var clicker = new Bytes();
 var count = 0;
-var total = 0
 
 function appendText(space, bytes) {
 	if(clicker.cookies <= 0) {
 		return false;
 	}else{
 		count += 1
-		total += 1
+	
 		var txt1 = "<p>You bought a " + space +  " for " + bytes + " bytes, and you have " + clicker.bytes + " bytes remaing. You have bought " + count + " upgrades.</p>";
 		$("#filePlot").append(txt1);     // Append new elements
 	}
-	
-	if(total === 10) {
-		total = 0
-		var txt1 = "<p>You have " + clicker.bytes + " bytes left over after buying " + count + " upgrades.</p>" ;
-		$("#filePlot").append(txt1);
-	}
-		
-	
 };
 
 var showUpgrades = function() {
