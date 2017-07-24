@@ -148,7 +148,7 @@ var showUpgrades = function() {
 		$("#byteUpgradeSec4").show();
 	}
 	
-	if(clicker.bytes >= 10000) {
+	if(clicker.bytes >= 100000) {
 		$("#byteUpgradeSec5").show();
 	}
 	
