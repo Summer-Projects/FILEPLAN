@@ -9,4 +9,4 @@ The game [SPACEPLAN](http://jhollands.co.uk/spaceplan/) was created by Jake Holl
 
 
 ## How this game works
-This is a clicker game so you should be able to clicker on the clicker and buy upgrades
+This is a clicker game so you should be able to clicker on the clicker and buy upgrades.

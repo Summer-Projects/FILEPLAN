@@ -342,9 +342,6 @@ var upgrade8 = function() {
 	}
 };
 
-
-/*showCode();
-showUpgrades();*/
 spaceGenPerSec();
 
 var spaceGen = function() {
@@ -356,7 +353,7 @@ var spaceGen = function() {
 	showUpgrades();
 };
 
-// Idea lister 0:20
+// Idea lister 5:20
 
 // Clicker update
 
