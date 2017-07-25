@@ -243,12 +243,6 @@ var showCode = function() {
 		var idea5 = document.getElementById("idea5").innerHTML = "Super Computer";
 	}
 };
-/*
-var showCode = function(bytes,id,text) {
-	if(clicker.bytes >= bytes) {
-		var code = document.getElementById(id).innerHTML = text;
-	}
-};*/
 
 var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
