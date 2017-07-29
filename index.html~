@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<title>📄 FILEPLAN</title>
 		<link rel="stylesheet" href="style.css">
@@ -84,10 +84,10 @@
 				<h2>Idea Lister</h2>
 				<hr/>
 				<div class="loader">
-					<div class="hide">
+					<div id="hide">
 						<div id="byteUpgradeIdea1" onclick="idea1(), appendText('Clicker Update', 200);" class="byteUpgrades">
 							<!-- Clicker update -->
-							<img src="images/bytesUpgrades.PNG" alt="upgrade" />
+							<img src="images/bytesUpgrades.PNG" />
 							<span id="idea1" class="codes">******* ******</span>
 							<br/>
 							<br/>
@@ -95,7 +95,7 @@
 						</div>
 						<div id="byteUpgradeIdea2" onclick="idea2(), appendText('Clicker Update++', 500);" class="byteUpgrades">
 							<!-- Clicker update++ -->
-							<img src="images/bytesUpgrades.PNG" alt="upgrade" />
+							<img src="images/bytesUpgrades.PNG" />
 							<span id="idea2" class="codes">******* ********</span>
 							<br/>
 							<br/>
@@ -103,7 +103,7 @@
 						</div>
 						<div id="byteUpgradeIdea3" onclick="idea3(), appendText('Clicker Update+++', 10000);" class="byteUpgrades">
 							<!-- Clicker update+++ -->
-							<img src="images/bytesUpgrades.PNG" alt="upgrade" />
+							<img src="images/bytesUpgrades.PNG" />
 							<span id="idea3" class="codes">******* *********</span>
 							<br/>
 							<br/>
@@ -111,7 +111,7 @@
 						</div>
 						<div id="byteUpgradeIdea4" onclick="idea4(), appendText('Clicker Update++++', 100000);" class="byteUpgrades">
 							<!-- Clicker update++++ -->
-							<img src="images/bytesUpgrades.PNG" alt="upgrade" />
+							<img src="images/bytesUpgrades.PNG" />
 							<span id="idea4" class="codes">******* **********</span>
 							<br/>
 							<br/>
@@ -119,7 +119,7 @@
 						</div>
 						<div id="byteUpgradeIdea5" onclick="idea5(), appendText('Super Computer', 1000000000);" class="byteUpgrades">
 							<!-- Super Computer -->
-							<img src="images/SuperComputer.PNG" alt="upgrade" />
+							<img src="images/SuperComputer.PNG" />
 							<span id="idea5" class="codes">***** ********</span>
 							<br/>
 							<br/>
@@ -163,18 +163,18 @@
 			<div class="left_bottom">
 				<h2>Space Maker</h2>
 				<div class="loader">
-					<div class="hide">
+					<div id="hide">
 						<div id="byteUpgradeSec1" onclick="upgrade1(), appendText('Storage Addition', 15);">
 							<!-- Storage Addition(key) -->
-							<img src="images/Capture3.PNG" alt="upgrade" />
+							<img src="images/Capture3.PNG" />
 							<span id="code1" class="codes">******* ********</span>
 							<br/>
 							<br/>
-							<span class="red" id="bytes1">15 bytes</span>
+							<span class="red" id="bytes">15 bytes</span>
 						</div>
 						<div id="byteUpgradeSec2" class="byteUpgrades" onclick="upgrade2(), appendText('Addition++', 100);">
 							<!-- Addition++ -->
-							<img src="images/file1.PNG" alt="upgrade" />
+							<img src="images/file1.PNG" />
 							<span id="code2" class="codes">**********</span>
 							<br/>
 							<br/>
@@ -182,7 +182,7 @@
 						</div>
 						<div id="byteUpgradeSec3" class="byteUpgrades" onclick="upgrade3(), appendText('File system++', 600);">
 							<!-- File system+++ -->
-							<img src="images/fileSys.PNG" alt="upgrade" />
+							<img src="images/fileSys.PNG" />
 							<span id="code3" class="codes">**** *********</span>
 							<br/>
 							<br/>
@@ -190,7 +190,7 @@
 						</div>
 						<div id="byteUpgradeSec4" class="byteUpgrades" onclick="upgrade4(), appendText('Search bytes', 10000);">
 							<!-- Search bytes -->
-							<img src="images/search.PNG" alt="upgrade" />
+							<img src="images/search.PNG" />
 							<span id="code4" class="codes">****** *****</span>
 							<br/>
 							<br/>
@@ -198,7 +198,7 @@
 						</div>
 						<div id="byteUpgradeSec5" class="byteUpgrades" onclick="upgrade5(), appendText('Files+++', 150000);">
 							<!-- Files+++ -->
-							<img src="images/files.PNG" alt="upgrade" />
+							<img src="images/files.PNG" />
 							<span id="code5" class="codes">********</span>
 							<br/>
 							<br/>
@@ -206,7 +206,7 @@
 						</div>
 						<div id="byteUpgradeSec6" class="byteUpgrades" onclick="upgrade6(), appendText('Byte-o-rama', 1600000);">
 							<!-- Byte-o-rama -->
-							<img src="images/editing.PNG" alt="upgrade" />
+							<img src="images/editing.PNG" />
 							<span id="code6" class="codes">***********</span>
 							<br/>
 							<br/>
@@ -214,7 +214,7 @@
 						</div>
 						<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade7(), appendText('Searching and create', 21000000);">
 							<!-- Searching and create -->
-							<img src="images/searchAnd.PNG" alt="upgrade" />
+							<img src="images/searchAnd.PNG" />
 							<span id="code7" class="codes">********* *** ******</span>
 							<br/>
 							<br/>
@@ -222,7 +222,7 @@
 						</div>
 						<div id="byteUpgradeSec8" class="byteUpgrades" onclick="upgrade8(), appendText('Searching and create+', 110000000);">
 							<!-- Searching and create+ -->
-							<img src="images/searchAnd++.PNG" alt="upgrade" />
+							<img src="images/searchAnd++.PNG" />
 							<span id="code8" class="codes">********* *** ********</span>
 							<br/>
 							<br/>

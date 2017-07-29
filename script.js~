@@ -338,16 +338,11 @@ var upgrade8 = function() {
 
 spaceGenPerSec();
 
-var secondFunction = function() { 
-	setInterval(function() { 
-		showCode();
-		showUpgrades();
-	},100);
-};
-
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
+	showCode();
+	showUpgrades();
 };
 
 // Idea lister 5:20
