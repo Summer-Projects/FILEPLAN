@@ -345,6 +345,8 @@ var secondFunction = function() {
 	},100);
 };
 
+secondFunction();
+
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
@@ -375,9 +377,9 @@ var idea2 = function() {
 
 //Clicker update+++
 var idea3 = function() {
-	if(clicker.bytes >= 10000) {
-		clicker.bytes -= 10000;
-		clicker.perClick += 10000;
+	if(clicker.bytes >= 1000) {
+		clicker.bytes -= 1000;
+		clicker.perClick += 1000;
 	}else{
 		invalid();
 	}
