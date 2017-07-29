@@ -119,7 +119,7 @@ var upgradeMoney3 = 10000;
 var clicker = new Bytes();
 var count = 0;
 var total = 0
-
+// clicker function
 function appendText(space, bytes) {
 	if(clicker.cookies <= 0) {
 		return false;
