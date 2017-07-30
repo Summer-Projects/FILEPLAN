@@ -397,7 +397,7 @@ var idea4 = function() {
 
 // Everthing times five
 var idea5 = function() {
-	if(clicker.bytes >= 1,000000000) {
+	if(clicker.bytes >= 1000000000) {
 		clicker.bytes -= 1000000000;
 		clicker.perClick *= 5;
 		clicker.perSec *= 5;
@@ -405,3 +405,14 @@ var idea5 = function() {
 		invalid();
 	}
 };
+
+// update
+// var idea6 = function() {
+// 	if(clicker.bytes >= 1000000000) {
+// 		clicker.bytes -= 1000000000;
+// 		clicker.perClick *= 5;
+// 		clicker.perSec *= 5;
+// 	}else{
+// 		invalid();
+// 	}
+// };
