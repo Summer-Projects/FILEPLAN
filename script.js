@@ -112,9 +112,14 @@ function Bytes() {
 	this.perSec = 0;
 }
 
-var upgradeMoney1 = 100;
-var upgradeMoney2 = 600;
-var upgradeMoney3 = 10000;
+var upgrade1 = 15;
+var upgrade2 = 100;
+var upgrade3 = 600;
+var upgrade4 = 10000;
+var upgrade5 = 150000;
+var upgrade6 = 1600000;
+var upgrade7;
+var upgrade8;
 
 var clicker = new Bytes();
 var count = 0;
