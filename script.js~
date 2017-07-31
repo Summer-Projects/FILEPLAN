@@ -124,13 +124,6 @@ var upgrade8;
 var clicker = new Bytes();
 var count = 0;
 var total = 0
-
-var sound1 = document.getElementById("myAudio1"); 
-
-var playAudio1 = function() { 
-    sound1.play(); 
-} 
-
 // clicker function
 function appendText(space, bytes) {
 	if(clicker.cookies <= 0) {
@@ -361,7 +354,6 @@ secondFunction();
 
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
-	playAudio1();
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 };
 
