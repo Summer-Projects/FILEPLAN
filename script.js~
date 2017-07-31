@@ -128,8 +128,8 @@ var total = 0
 /*var sound1 = document.getElementById("myAudio1"); 
 
 var playAudio1 = function() { 
-    sound1.play();
-}*/
+    sound1.play(); 
+}*/ 
 
 // clicker function
 function appendText(space, bytes) {
