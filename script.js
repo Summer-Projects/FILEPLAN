@@ -131,11 +131,11 @@ var playAudio1 = function() {
     sound1.play();
 }*/
 
-var changePrice = function(price, id) {
+/*var changePrice = function(price, id) {
 	price *= 2;
 	document.getElementById(id).innerHTML = price + " bytes";
 };
-
+*/
 // clicker function
 function appendText(space, bytes) {
 	if(clicker.cookies <= 0) {
@@ -278,7 +278,7 @@ var upgrade1 = function() {
 		clicker.perSec += 1;
 		clicker.bytes -= upgrade1;
 		clicker.upgrades += 1;
-		changePrice(upgrade1, "space1");
+	//	changePrice(upgrade1, "space1");
 	}else{
 		invalid();
 	}
@@ -289,7 +289,7 @@ var upgrade2 = function() {
 		clicker.perSec += 7;
 		clicker.bytes -= upgrade2;
 		clicker.upgrades += 1;
-		changePrice(upgrade2, "space2");
+	//	changePrice(upgrade2, "space2");
 	}else{
 		invalid();
 	}
@@ -300,7 +300,7 @@ var upgrade3 = function() {
 		clicker.perSec += 42;
 		clicker.bytes -= upgrade3;
 		clicker.upgrades += 1;
-		changePrice(upgrade3, "space3");
+	//	changePrice(upgrade3, "space3");
 	}else{
 		invalid();
 	}
@@ -311,7 +311,7 @@ var upgrade4 = function() {
 		clicker.perSec += 100;
 		clicker.bytes -= upgrade4;
 		clicker.upgrades += 1;
-		changePrice(upgrade4, "space4");
+	//	changePrice(upgrade4, "space4");
 	}else{
 		invalid();
 	}
@@ -322,7 +322,7 @@ var upgrade5 = function() {
 		clicker.perSec += 230;
 		clicker.bytes -= upgrade5;
 		clicker.upgrades += 1;
-		changePrice(upgrade5, "space5");
+	//	changePrice(upgrade5, "space5");
 	}else{
 		invalid();
 	}
@@ -333,7 +333,7 @@ var upgrade6 = function() {
 		clicker.perSec += 1600;
 		clicker.bytes -= upgrade;
 		clicker.upgrades += 1;6
-		changePrice(upgrade6, "space6");
+	//	changePrice(upgrade6, "space6");
 	}else{
 		invalid();
 	}
@@ -344,7 +344,7 @@ var upgrade7 = function() {
 		clicker.perSec += 8000;
 		clicker.bytes -= upgrade7;
 		clicker.upgrades += 1;
-		changePrice(upgrade7, "space7");
+	//	changePrice(upgrade7, "space7");
 	}else{
 		invalid();
 	}
@@ -355,7 +355,7 @@ var upgrade8 = function() {
 		clicker.perSec += 32000;
 		clicker.bytes -= upgrade8;
 		clicker.upgrades += 1;
-		changePrice(upgrade8, "space8");
+	//	changePrice(upgrade8, "space8");
 	}else{
 		invalid();
 	}
