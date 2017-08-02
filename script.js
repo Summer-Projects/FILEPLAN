@@ -131,6 +131,11 @@ var playAudio1 = function() {
     sound1.play();
 }*/
 
+var changePrice = function(price, id) {
+	price *= 2;
+	document.getElementById(id).innerHTML = price + " bytes";
+};
+
 // clicker function
 function appendText(space, bytes) {
 	if(clicker.cookies <= 0) {
@@ -271,8 +276,9 @@ var spaceGenPerSec = function() {
 var upgrade1 = function() {
 	if(clicker.bytes >= 15) {
 		clicker.perSec += 1;
-		clicker.bytes -= 15;
+		clicker.bytes -= upgrade1;
 		clicker.upgrades += 1;
+		changePrice(upgrade1, "space1");
 	}else{
 		invalid();
 	}
@@ -281,8 +287,9 @@ var upgrade1 = function() {
 var upgrade2 = function() {
 	if(clicker.bytes >= 100) {
 		clicker.perSec += 7;
-		clicker.bytes -= 100;
+		clicker.bytes -= upgrade2;
 		clicker.upgrades += 1;
+		changePrice(upgrade2, "space2");
 	}else{
 		invalid();
 	}
@@ -291,8 +298,9 @@ var upgrade2 = function() {
 var upgrade3 = function() {
 	if(clicker.bytes >= 600) {
 		clicker.perSec += 42;
-		clicker.bytes -= 600;
+		clicker.bytes -= upgrade3;
 		clicker.upgrades += 1;
+		changePrice(upgrade3, "space3");
 	}else{
 		invalid();
 	}
@@ -301,8 +309,9 @@ var upgrade3 = function() {
 var upgrade4 = function() {
 	if(clicker.bytes >= 10000) {
 		clicker.perSec += 100;
-		clicker.bytes -= 10000;
+		clicker.bytes -= upgrade4;
 		clicker.upgrades += 1;
+		changePrice(upgrade4, "space4");
 	}else{
 		invalid();
 	}
@@ -311,8 +320,9 @@ var upgrade4 = function() {
 var upgrade5 = function() {
 	if(clicker.bytes >= 150000) {
 		clicker.perSec += 230;
-		clicker.bytes -= 150000;
+		clicker.bytes -= upgrade5;
 		clicker.upgrades += 1;
+		changePrice(upgrade5, "space5");
 	}else{
 		invalid();
 	}
@@ -321,8 +331,9 @@ var upgrade5 = function() {
 var upgrade6 = function() {
 	if(clicker.bytes >= 1600000) {
 		clicker.perSec += 1600;
-		clicker.bytes -= 1600000;
-		clicker.upgrades += 1;
+		clicker.bytes -= upgrade;
+		clicker.upgrades += 1;6
+		changePrice(upgrade6, "space6");
 	}else{
 		invalid();
 	}
@@ -331,8 +342,9 @@ var upgrade6 = function() {
 var upgrade7 = function() {
 	if(clicker.bytes >= 21000000) {
 		clicker.perSec += 8000;
-		clicker.bytes -= 21000000;
+		clicker.bytes -= upgrade7;
 		clicker.upgrades += 1;
+		changePrice(upgrade7, "space7");
 	}else{
 		invalid();
 	}
@@ -341,8 +353,9 @@ var upgrade7 = function() {
 var upgrade8 = function() {
 	if(clicker.bytes >= 110000000) {
 		clicker.perSec += 32000;
-		clicker.bytes -= 110000000;
+		clicker.bytes -= upgrade8;
 		clicker.upgrades += 1;
+		changePrice(upgrade8, "space8");
 	}else{
 		invalid();
 	}
@@ -418,9 +431,4 @@ var idea5 = function() {
 		invalid();
 	}
 };
-
-var changePrice = function(price) {
-	price *= 2;
-};
-
 	
