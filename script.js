@@ -418,14 +418,3 @@ var idea5 = function() {
 		invalid();
 	}
 };
-
-// update
-// var idea6 = function() {
-// 	if(clicker.bytes >= 1000000000) {
-// 		clicker.bytes -= 1000000000;
-// 		clicker.perClick *= 5;
-// 		clicker.perSec *= 5;
-// 	}else{
-// 		invalid();
-// 	}
-// };
