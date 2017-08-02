@@ -118,8 +118,8 @@ var upgrade3 = 600;
 var upgrade4 = 10000;
 var upgrade5 = 150000;
 var upgrade6 = 1600000;
-var upgrade7;
-var upgrade8;
+var upgrade7 = 21000000;
+var upgrade8 = 110000000;
 
 var clicker = new Bytes();
 var count = 0;
@@ -418,3 +418,9 @@ var idea5 = function() {
 		invalid();
 	}
 };
+
+var changePrice = function(price) {
+	price *= 2;
+};
+
+	
