@@ -184,48 +184,23 @@ var showUpgrades = function() {
 	}
 
 	if(clicker.bytes >= 70) {
-		number += 1
-		if(number >= 1) {
-			$("byteUpgradeIdea1").hide();
-		}else{
-			$("#byteUpgradeIdea1").show();
-		}
+		$("#byteUpgradeIdea1").show();
 	}
 
 	if(clicker.bytes >= 200) {
-		number += 1
-		if(number >= 1) {
-			$("byteUpgradeIdea2").hide();
-		}else{
-			$("#byteUpgradeIdea2").show();
-		}
+		$("#byteUpgradeIdea2").show();
 	}
 
 	if(clicker.bytes >= 800) {
-		number += 1
-		if(number >= 1) {
-			$("byteUpgradeIdea3").hide();
-		}else{
-			$("#byteUpgradeIdea3").show();
-		}
+		$("#byteUpgradeIdea3").show();
 	}
 
 	if(clicker.bytes >= 8000)  {
-		number += 1
-		if(number >= 1) {
-			$("byteUpgradeIdea4").hide();
-		}else{
-			$("#byteUpgradeIdea4").show();
-		}
+		$("#byteUpgradeIdea4").show();
 	}
 
 	if(clicker.bytes >= 900000000) {
-		number += 1
-		if(number >= 1) {
-			$("byteUpgradeIdea5").hide();
-		}else{
-			$("#byteUpgradeIdea5").show();
-		}
+		$("#byteUpgradeIdea5").show();
 	}
 };
 
