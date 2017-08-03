@@ -397,7 +397,7 @@ var idea2 = function() {
 	if(clicker.bytes >= 500) {
 		clicker.bytes -= 500;
 		clicker.perClick += 100
-		#("#byteUpgradeIdea2").hide();
+		$("#byteUpgradeIdea2").hide();
 	}else{
 		invalid();
 	}
