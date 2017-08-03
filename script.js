@@ -276,7 +276,7 @@ var spaceGenPerSec = function() {
 var upgrade1 = function() {
 	if(clicker.bytes >= 15) {
 		clicker.perSec += 1;
-		clicker.bytes -= upgrade1;
+		clicker.bytes -= 15;
 		clicker.upgrades += 1;
 	//	changePrice(upgrade1, "space1");
 	}else{
@@ -287,7 +287,7 @@ var upgrade1 = function() {
 var upgrade2 = function() {
 	if(clicker.bytes >= 100) {
 		clicker.perSec += 7;
-		clicker.bytes -= upgrade2;
+		clicker.bytes -= 100;
 		clicker.upgrades += 1;
 	//	changePrice(upgrade2, "space2");
 	}else{
@@ -298,7 +298,7 @@ var upgrade2 = function() {
 var upgrade3 = function() {
 	if(clicker.bytes >= 600) {
 		clicker.perSec += 42;
-		clicker.bytes -= upgrade3;
+		clicker.bytes -= 600;
 		clicker.upgrades += 1;
 	//	changePrice(upgrade3, "space3");
 	}else{
@@ -309,7 +309,7 @@ var upgrade3 = function() {
 var upgrade4 = function() {
 	if(clicker.bytes >= 10000) {
 		clicker.perSec += 100;
-		clicker.bytes -= upgrade4;
+		clicker.bytes -= 10000;
 		clicker.upgrades += 1;
 	//	changePrice(upgrade4, "space4");
 	}else{
@@ -320,7 +320,7 @@ var upgrade4 = function() {
 var upgrade5 = function() {
 	if(clicker.bytes >= 150000) {
 		clicker.perSec += 230;
-		clicker.bytes -= upgrade5;
+		clicker.bytes -= 150000;
 		clicker.upgrades += 1;
 	//	changePrice(upgrade5, "space5");
 	}else{
@@ -331,8 +331,8 @@ var upgrade5 = function() {
 var upgrade6 = function() {
 	if(clicker.bytes >= 1600000) {
 		clicker.perSec += 1600;
-		clicker.bytes -= upgrade;
-		clicker.upgrades += 1;6
+		clicker.bytes -= 1600000;
+		clicker.upgrades += 1;
 	//	changePrice(upgrade6, "space6");
 	}else{
 		invalid();
@@ -342,7 +342,7 @@ var upgrade6 = function() {
 var upgrade7 = function() {
 	if(clicker.bytes >= 21000000) {
 		clicker.perSec += 8000;
-		clicker.bytes -= upgrade7;
+		clicker.bytes -= 21000000;
 		clicker.upgrades += 1;
 	//	changePrice(upgrade7, "space7");
 	}else{
@@ -353,7 +353,7 @@ var upgrade7 = function() {
 var upgrade8 = function() {
 	if(clicker.bytes >= 110000000) {
 		clicker.perSec += 32000;
-		clicker.bytes -= upgrade8;
+		clicker.bytes -= 110000000;
 		clicker.upgrades += 1;
 	//	changePrice(upgrade8, "space8");
 	}else{
