@@ -82,7 +82,7 @@ img {
 }
 
 .mainScreen {
-	text-align:center;	
+	text-align:center;
 }
 
 .mainScreen h1 {
@@ -133,8 +133,8 @@ img {
 }
 
 #perSecond {
-	text-align:right;
-	display: block;
+		text-align:right;
+		display: block;
     font-size: 0.67em;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -144,8 +144,8 @@ img {
 }
 
 #upgrades {
-	text-align:right;
-	display: block;
+		text-align:right;
+		display: block;
     font-size: 0.67em;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 1em;
@@ -155,15 +155,15 @@ img {
 }
 
 #dateWord {
-	text-align:right;
+		text-align:right;
 }
 
 #memory {
-	text-align:left;
+		text-align:left;
 }
 
 .h6 {
-	display: block;
+		display: block;
     font-size: 0.67em;
     -webkit-margin-before: 2.33em;
     -webkit-margin-after: 2.33em;
@@ -173,7 +173,7 @@ img {
 }
 
 h2 {
-	-webkit-margin-before: 0em;
+		-webkit-margin-before: 0em;
     -webkit-margin-after: 5px;
     -webkit-margin-start: 20px;
     -webkit-margin-end: 0px;
