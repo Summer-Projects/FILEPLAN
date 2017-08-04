@@ -20,7 +20,10 @@ This is the audit score for the website(as of 7/29/2017 10:39:29 PM)
 
 ## Upgrades
 
-1. Change price on click(see #25)
+1. Change price on click(see #25)*
 2. Add more upgrades to the idea lister(see #27)
-3. Change the Receipt(see #24)
-4. Add progress bar(see #28) 
+3. Change the Receipt(see #24)**
+4. Add progress bar(see #28)**
+
+###### * in progress
+###### ** will not be done for a while
