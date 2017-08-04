@@ -436,3 +436,7 @@ var idea5 = function() {
 		invalid();
 	}
 };
+
+var tests = function() {
+	spacenGen();
+};
