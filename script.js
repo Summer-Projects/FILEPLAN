@@ -458,9 +458,7 @@ var idea5 = function() {
 var idea6 = function() {
 	if(clicker.bytes >= 300) {
 		clicker.upgrade1 * 2;
-	}else{
-		invalid();
-	}
+		clicker.bytes -= 300
 };
 
 var tests = function() {
