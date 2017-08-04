@@ -118,7 +118,7 @@ function Bytes() {
 	this.upgrades = 0,
 	this.perClick = 1,
 	this.perSec = 0,
-	this.upgrade1 = 15;
+	this.upgrade1 = 1;
 }
 
 // var upgrade1 = 15;
@@ -293,9 +293,9 @@ var spaceGenPerSec = function() {
 
 var upgrade1 = function() {
 	if(clicker.bytes >= 15) {
-		clicker.perSec += 1;
+		clicker.perSec += clicker.upgrade1;
 		clicker.bytes -= 15;
-		clicker.upgrades += clicker.upgrade1;
+		clicker.upgrades += 1;
 	//	changePrice(upgrade1, "space1");
 	}else{
 		invalid();
