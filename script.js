@@ -156,7 +156,7 @@ function appendText(space, bytes) {
 	}
 };
 
-var number = 0;
+// var number = 0;
 
 var showUpgrades = function() {
 	if(clicker.bytes >= 350) {
