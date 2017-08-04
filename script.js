@@ -25,6 +25,7 @@ $(document).ready(function() {
 	$("#byteUpgradeIdea3").hide();
 	$("#byteUpgradeIdea4").hide();
 	$("#byteUpgradeIdea5").hide();
+	$("#byteUpgradeIdea6").hide();
 
 	$("#byteUpgradeSec1").hover(function() {
 		$("#upgrade1").show();
@@ -102,6 +103,12 @@ $(document).ready(function() {
 		$("#upgrade13").show();
 	}, function() {
 		$("#upgrade13").hide();
+	});
+
+	$("#byteUpgradeIdea6").hover(function() {
+		$("#upgrade14").show();
+	}, function() {
+		$("#upgrade14").hide();
 	});
 });
 
@@ -201,6 +208,10 @@ var showUpgrades = function() {
 	if(clicker.bytes >= 900000000) {
 		$("#byteUpgradeIdea5").show();
 	}
+
+	if(clicker.bytes >= 200) {
+		$("#byteUpgradeIdea6").show();
+	}
 };
 
 var dateFunc = function() {
@@ -260,6 +271,10 @@ var showCode = function() {
 
 	if(clicker.bytes >= 950000000) {
 		var idea5 = document.getElementById("idea5").innerHTML = "Super Computer";
+	}
+
+	if(clicker.bytes >= 250) {
+		var idea5 = document.getElementById("idea6").innerHTML = "Times Production";
 	}
 };
 
