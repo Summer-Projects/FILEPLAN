@@ -14,6 +14,7 @@ $(document).ready(function() {
 	$("#upgrade11").hide();
 	$("#upgrade12").hide();
 	$("#upgrade13").hide();
+	$("#upgrade14").hide();
 	$("#byteUpgradeSec3").hide();
 	$("#byteUpgradeSec4").hide();
 	$("#byteUpgradeSec5").hide();
