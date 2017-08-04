@@ -375,7 +375,6 @@ secondFunction();
 
 var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
-	//playAudio1();
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 };
 
