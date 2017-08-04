@@ -109,17 +109,18 @@ function Bytes() {
 	this.bytes = 0,
 	this.upgrades = 0,
 	this.perClick = 1,
-	this.perSec = 0;
+	this.perSec = 0,
+	this.upgrade1 = 15;
 }
 
-var upgrade1 = 15;
-var upgrade2 = 100;
-var upgrade3 = 600;
-var upgrade4 = 10000;
-var upgrade5 = 150000;
-var upgrade6 = 1600000;
-var upgrade7 = 21000000;
-var upgrade8 = 110000000;
+// var upgrade1 = 15;
+// var upgrade2 = 100;
+// var upgrade3 = 600;
+// var upgrade4 = 10000;
+// var upgrade5 = 150000;
+// var upgrade6 = 1600000;
+// var upgrade7 = 21000000;
+// var upgrade8 = 110000000;
 
 var clicker = new Bytes();
 var count = 0;
@@ -278,7 +279,7 @@ var upgrade1 = function() {
 	if(clicker.bytes >= 15) {
 		clicker.perSec += 1;
 		clicker.bytes -= 15;
-		clicker.upgrades += 1;
+		clicker.upgrades += clicker.upgrade1;
 	//	changePrice(upgrade1, "space1");
 	}else{
 		invalid();
@@ -432,6 +433,15 @@ var idea5 = function() {
 		clicker.perClick *= 5;
 		clicker.perSec *= 5;
 		$("#byteUpgradeIdea5").hide();
+	}else{
+		invalid();
+	}
+};
+
+// upgrade idea1 prodution times two
+var idea6 = function() {
+	if(clicker.bytes >= 300) {
+		clicker.upgrade1 * 2;
 	}else{
 		invalid();
 	}
