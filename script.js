@@ -156,8 +156,6 @@ function appendText(space, bytes) {
 	}
 };
 
-// var number = 0;
-
 var showUpgrades = function() {
 	if(clicker.bytes >= 350) {
 		$("#byteUpgradeSec3").show();
