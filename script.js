@@ -461,7 +461,3 @@ var idea6 = function() {
 		clicker.bytes -= 300;
 	}
 };
-
-var tests = function() {
-	spacenGen();
-};

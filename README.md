@@ -27,3 +27,10 @@ This is the audit score for the website(as of 7/29/2017 10:39:29 PM)
 
 ###### * in progress
 ###### ** will not be done for a while
+
+
+## Bugs
+
+- Only clicker upgrades
+- No sound
+- No music
