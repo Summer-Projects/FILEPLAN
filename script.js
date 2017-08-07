@@ -275,7 +275,7 @@ var showCode = function() {
 	}
 
 	if(clicker.bytes >= 250) {
-		var idea5 = document.getElementById("idea6").innerHTML = "Times Production";
+		var idea6 = document.getElementById("idea6").innerHTML = "Times Production";
 	}
 };
 
