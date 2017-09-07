@@ -15,7 +15,7 @@ This is a clicker game so you should be able to clicker on the clicker and buy u
 ## Audit Score
 This is the audit score for the website(as of 7/29/2017 10:39:29 PM)
 
-[![Audit Score](auditScore.PNG)](https://developers.google.com/web/updates/2017/05/devtools-release-notes#lighthouse)
+[![Audit Score](AuditScore.PNG)](https://developers.google.com/web/updates/2017/05/devtools-release-notes#lighthouse)
 
 
 ## Upgrades
