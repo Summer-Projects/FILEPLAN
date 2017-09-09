@@ -115,10 +115,10 @@ $(document).ready(function() {
 
 function Bytes() {
 	this.bytes = 0,
-	this.upgrades = 0,
-	this.perClick = 1,
-	this.perSec = 0,
-	this.upgrade1 = 1;
+		this.upgrades = 0,
+		this.perClick = 1,
+		this.perSec = 0,
+		this.upgrade1 = 1;
 }
 
 // var upgrade1 = 15;
@@ -147,134 +147,134 @@ var playAudio1 = function() {
 */
 // clicker function
 function appendText(space, bytes) {
-	if(clicker.cookies <= 0) {
+	if (clicker.cookies <= 0) {
 		return false;
-	}else{
+	} else {
 		count += 1
 		total += 1
-		var txt1 = "<p>You bought a " + space +  " for " + bytes + " bytes, and you have " + clicker.bytes + " bytes remaing. You have bought " + count + " upgrades.</p>";
-		$("#filePlot").append(txt1);     // Append new elements
+		var txt1 = "<p>You bought a " + space + " for " + bytes + " bytes, and you have " + clicker.bytes + " bytes remaing. You have bought " + count + " upgrades.</p>";
+		$("#filePlot").append(txt1); // Append new elements
 	}
 
-	if(total === 10) {
+	if (total === 10) {
 		total = 0
-		var txt1 = "<p>You have " + clicker.bytes + " bytes left over after buying " + count + " upgrades.</p>" ;
+		var txt1 = "<p>You have " + clicker.bytes + " bytes left over after buying " + count + " upgrades.</p>";
 		$("#filePlot").append(txt1);
-	}else{
+	} else {
 		return false;
 	}
 };
 
 var showUpgrades = function() {
-	if(clicker.bytes >= 350) {
+	if (clicker.bytes >= 350) {
 		$("#byteUpgradeSec3").show();
 	}
 
-	if(clicker.bytes >= 1000) {
+	if (clicker.bytes >= 1000) {
 		$("#byteUpgradeSec4").show();
 	}
 
-	if(clicker.bytes >= 10000) {
+	if (clicker.bytes >= 10000) {
 		$("#byteUpgradeSec5").show();
 	}
 
-	if(clicker.bytes >= 4000000) {
+	if (clicker.bytes >= 4000000) {
 		$("#byteUpgradeSec6").show();
 	}
 
-	if(clicker.bytes >= 50000000) {
+	if (clicker.bytes >= 50000000) {
 		$("#byteUpgradeSec7").show();
 	}
 
-	if(clicker.bytes >= 100000000) {
+	if (clicker.bytes >= 100000000) {
 		$("#byteUpgradeSec8").show();
 	}
 
-	if(clicker.bytes >= 70) {
+	if (clicker.bytes >= 70) {
 		$("#byteUpgradeIdea1").show();
 	}
 
-	if(clicker.bytes >= 200) {
+	if (clicker.bytes >= 200) {
 		$("#byteUpgradeIdea2").show();
 	}
 
-	if(clicker.bytes >= 800) {
+	if (clicker.bytes >= 800) {
 		$("#byteUpgradeIdea3").show();
 	}
 
-	if(clicker.bytes >= 8000)  {
+	if (clicker.bytes >= 8000) {
 		$("#byteUpgradeIdea4").show();
 	}
 
-	if(clicker.bytes >= 900000000) {
+	if (clicker.bytes >= 900000000) {
 		$("#byteUpgradeIdea5").show();
 	}
 
-	if(clicker.bytes >= 200) {
+	if (clicker.bytes >= 200) {
 		$("#byteUpgradeIdea6").show();
 	}
 };
 
 var dateFunc = function() {
 	setInterval(function() {
-        document.getElementById("dateCount").innerHTML = Date();
-    },1000);
+		document.getElementById("dateCount").innerHTML = Date();
+	}, 1000);
 };
 
 var showCode = function() {
-	if(clicker.bytes >= 0) {
+	if (clicker.bytes >= 0) {
 		var code1 = document.getElementById("code1").innerHTML = "Storage Addition";
 	}
 
-	if(clicker.bytes >= 70) {
+	if (clicker.bytes >= 70) {
 		var code2 = document.getElementById("code2").innerHTML = "Addition++";
 	}
 
-	if(clicker.bytes >= 550) {
+	if (clicker.bytes >= 550) {
 		var code3 = document.getElementById("code3").innerHTML = "File system+++";
 	}
 
-	if(clicker.bytes >= 9950) {
+	if (clicker.bytes >= 9950) {
 		var code4 = document.getElementById("code4").innerHTML = "Search bytes";
 	}
 
-	if(clicker.bytes >= 149950) {
+	if (clicker.bytes >= 149950) {
 		var code5 = document.getElementById("code5").innerHTML = "Files+++";
 	}
 
-	if(clicker.bytes >= 4999950) {
+	if (clicker.bytes >= 4999950) {
 		var code6 = document.getElementById("code6").innerHTML = "Byte-o-rama";
 	}
 
-	if(clicker.bytes >= 74999950) {
+	if (clicker.bytes >= 74999950) {
 		var code7 = document.getElementById("code7").innerHTML = "Searching and create";
 	}
 
-	if(clicker.bytes >= 129999950) {
+	if (clicker.bytes >= 129999950) {
 		var code8 = document.getElementById("code8").innerHTML = "Searching and create+";
 	}
 
-	if(clicker.bytes >= 100) {
+	if (clicker.bytes >= 100) {
 		var idea1 = document.getElementById("idea1").innerHTML = "Clicker update";
 	}
 
-	if(clicker.bytes >= 400) {
+	if (clicker.bytes >= 400) {
 		var idea2 = document.getElementById("idea2").innerHTML = "Clicker update++";
 	}
 
-	if(clicker.bytes >= 900) {
+	if (clicker.bytes >= 900) {
 		var idea3 = document.getElementById("idea3").innerHTML = "Clicker update+++";
 	}
 
-	if(clicker.bytes >= 9000) {
+	if (clicker.bytes >= 9000) {
 		var idea4 = document.getElementById("idea4").innerHTML = "Clicker update++++";
 	}
 
-	if(clicker.bytes >= 950000000) {
+	if (clicker.bytes >= 950000000) {
 		var idea5 = document.getElementById("idea5").innerHTML = "Super Computer";
 	}
 
-	if(clicker.bytes >= 250) {
+	if (clicker.bytes >= 250) {
 		var idea6 = document.getElementById("idea6").innerHTML = "Times Production";
 	}
 };
@@ -288,93 +288,93 @@ var spaceGenPerSec = function() {
 		var second = document.getElementById("perSecond").innerHTML = "per second: " + clicker.perSec + "";
 		clicker.bytes += clicker.perSec;
 		var perSec = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
-	},1000);
+	}, 1000);
 };
 
 var upgrade1 = function() {
-	if(clicker.bytes >= 15) {
+	if (clicker.bytes >= 15) {
 		clicker.perSec += clicker.upgrade1;
 		clicker.bytes -= 15;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade1, "space1");
-	}else{
+		//	changePrice(upgrade1, "space1");
+	} else {
 		invalid();
 	}
 };
 
 var upgrade2 = function() {
-	if(clicker.bytes >= 100) {
+	if (clicker.bytes >= 100) {
 		clicker.perSec += 7;
 		clicker.bytes -= 100;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade2, "space2");
-	}else{
+		//	changePrice(upgrade2, "space2");
+	} else {
 		invalid();
 	}
 };
 
 var upgrade3 = function() {
-	if(clicker.bytes >= 600) {
+	if (clicker.bytes >= 600) {
 		clicker.perSec += 42;
 		clicker.bytes -= 600;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade3, "space3");
-	}else{
+		//	changePrice(upgrade3, "space3");
+	} else {
 		invalid();
 	}
 };
 
 var upgrade4 = function() {
-	if(clicker.bytes >= 10000) {
+	if (clicker.bytes >= 10000) {
 		clicker.perSec += 100;
 		clicker.bytes -= 10000;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade4, "space4");
-	}else{
+		//	changePrice(upgrade4, "space4");
+	} else {
 		invalid();
 	}
 };
 
 var upgrade5 = function() {
-	if(clicker.bytes >= 150000) {
+	if (clicker.bytes >= 150000) {
 		clicker.perSec += 230;
 		clicker.bytes -= 150000;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade5, "space5");
-	}else{
+		//	changePrice(upgrade5, "space5");
+	} else {
 		invalid();
 	}
 };
 
 var upgrade6 = function() {
-	if(clicker.bytes >= 1600000) {
+	if (clicker.bytes >= 1600000) {
 		clicker.perSec += 1600;
 		clicker.bytes -= 1600000;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade6, "space6");
-	}else{
+		//	changePrice(upgrade6, "space6");
+	} else {
 		invalid();
 	}
 };
 
 var upgrade7 = function() {
-	if(clicker.bytes >= 21000000) {
+	if (clicker.bytes >= 21000000) {
 		clicker.perSec += 8000;
 		clicker.bytes -= 21000000;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade7, "space7");
-	}else{
+		//	changePrice(upgrade7, "space7");
+	} else {
 		invalid();
 	}
 };
 
 var upgrade8 = function() {
-	if(clicker.bytes >= 110000000) {
+	if (clicker.bytes >= 110000000) {
 		clicker.perSec += 32000;
 		clicker.bytes -= 110000000;
 		clicker.upgrades += 1;
-	//	changePrice(upgrade8, "space8");
-	}else{
+		//	changePrice(upgrade8, "space8");
+	} else {
 		invalid();
 	}
 };
@@ -385,7 +385,7 @@ var secondFunction = function() {
 	setInterval(function() {
 		showCode();
 		showUpgrades();
-	},100);
+	}, 100);
 };
 
 secondFunction();
@@ -400,63 +400,63 @@ var spaceGen = function() {
 // Clicker update
 
 var idea1 = function() {
-	if(clicker.bytes >= 200) {
+	if (clicker.bytes >= 200) {
 		clicker.bytes -= 200;
 		clicker.perClick += 3
 		$("#byteUpgradeIdea1").hide();
-	}else{
+	} else {
 		invalid();
 	}
 };
 
 //Clicker update++
 var idea2 = function() {
-	if(clicker.bytes >= 500) {
+	if (clicker.bytes >= 500) {
 		clicker.bytes -= 500;
 		clicker.perClick += 100
 		$("#byteUpgradeIdea2").hide();
-	}else{
+	} else {
 		invalid();
 	}
 };
 
 //Clicker update+++
 var idea3 = function() {
-	if(clicker.bytes >= 1000) {
+	if (clicker.bytes >= 1000) {
 		clicker.bytes -= 1000;
 		clicker.perClick += 1000;
 		$("#byteUpgradeIdea3").hide();
-	}else{
+	} else {
 		invalid();
 	}
 };
 
 //Clicker update++++
 var idea4 = function() {
-	if(clicker.bytes >= 10000) {
+	if (clicker.bytes >= 10000) {
 		clicker.bytes -= 10000;
 		clicker.perClick += 100000;
 		$("#byteUpgradeSec4").hide();
-	}else{
+	} else {
 		invalid();
 	}
 };
 
 // Everthing times five
 var idea5 = function() {
-	if(clicker.bytes >= 1000000000) {
+	if (clicker.bytes >= 1000000000) {
 		clicker.bytes -= 1000000000;
 		clicker.perClick *= 5;
 		clicker.perSec *= 5;
 		$("#byteUpgradeIdea5").hide();
-	}else{
+	} else {
 		invalid();
 	}
 };
 
 // upgrade idea1 prodution times two
 var idea6 = function() {
-	if(clicker.bytes >= 300) {
+	if (clicker.bytes >= 300) {
 		clicker.upgrade1 * 2;
 		clicker.bytes -= 300;
 	}
