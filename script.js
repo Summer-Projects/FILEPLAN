@@ -461,3 +461,7 @@ var idea6 = function() {
 		clicker.bytes -= 300;
 	}
 };
+
+// TODO: Minify code
+// TODO: Fix the changePrice function.
+// TODO: Add music and sounds.
