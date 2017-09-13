@@ -454,7 +454,7 @@ var idea5 = function() {
 	}
 };
 
-// upgrade idea1 prodution times two
+// upgrade idea1 prodution times twotest
 var idea6 = function() {
 	if (clicker.bytes >= 300) {
 		clicker.upgrade1 * 2;
@@ -462,11 +462,12 @@ var idea6 = function() {
 	}
 };
 
-// TODO: Minify code
+// TODO: Minify code. See idea();
 // TODO: Fix the changePrice function.
 // TODO: Add music and sounds.
+// IDEA: Add graphics.
 
-var test = function(name, cost, addition) {
+var idea = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
 		clicker.perClick += addition;
 		clicker.bytes -= cost;
