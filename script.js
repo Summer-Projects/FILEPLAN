@@ -26,7 +26,7 @@ $(document).ready(function() {
 	$("#byteUpgradeIdea3").hide();
 	$("#byteUpgradeIdea4").hide();
 	$("#byteUpgradeIdea5").hide();
-	$("#byteUpgradeIdea6").hide();
+	// $("#byteUpgradeIdea6").hide();
 
 	$("#byteUpgradeSec1").hover(function() {
 		$("#upgrade1").show();
@@ -274,9 +274,9 @@ var showCode = function() {
 		var idea5 = document.getElementById("idea5").innerHTML = "Super Computer";
 	}
 
-	if (clicker.bytes >= 250) {
-		var idea6 = document.getElementById("idea6").innerHTML = "Times Production";
-	}
+	// if (clicker.bytes >= 250) {
+	// 	var idea6 = document.getElementById("idea6").innerHTML = "Times Production";
+	// }
 };
 
 var invalid = function() {
@@ -290,66 +290,6 @@ var spaceGenPerSec = function() {
 		var perSec = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 	}, 1000);
 };
-
-
-// // Idea lister 5:20
-//
-// // Clicker update
-//
-// var idea1 = function() {
-// 	if (clicker.bytes >= 200) {
-// 		clicker.bytes -= 200;
-// 		clicker.perClick += 3
-// 		$("#byteUpgradeIdea1").hide();
-// 	} else {
-// 		invalid();
-// 	}
-// };
-//
-// //Clicker update++
-// var idea2 = function() {
-// 	if (clicker.bytes >= 500) {
-// 		clicker.bytes -= 500;
-// 		clicker.perClick += 100
-// 		$("#byteUpgradeIdea2").hide();
-// 	} else {
-// 		invalid();
-// 	}
-// };
-//
-// //Clicker update+++
-// var idea3 = function() {
-// 	if (clicker.bytes >= 1000) {
-// 		clicker.bytes -= 1000;
-// 		clicker.perClick += 1000;
-// 		$("#byteUpgradeIdea3").hide();
-// 	} else {
-// 		invalid();
-// 	}
-// };
-//
-// //Clicker update++++
-// var idea4 = function() {
-// 	if (clicker.bytes >= 10000) {
-// 		clicker.bytes -= 10000;
-// 		clicker.perClick += 100000;
-// 		$("#byteUpgradeSec4").hide();
-// 	} else {
-// 		invalid();
-// 	}
-// };
-//
-// // Everthing times five
-// var idea5 = function() {
-// 	if (clicker.bytes >= 1000000000) {
-// 		clicker.bytes -= 1000000000;
-// 		clicker.perClick *= 5;
-// 		clicker.perSec *= 5;
-// 		$("#byteUpgradeIdea5").hide();
-// 	} else {
-// 		invalid();
-// 	}
-// };
 
 // TODO: Minify code. See idea();
 // TODO: Fix the changePrice function.
@@ -367,6 +307,14 @@ var idea = function(name, cost, addition) {
 var upgrade = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
 		clicker.perSec += addition;
+		clicker.bytes -= cost;
+	}
+}
+
+var idea2 = function(name, cost, addition) {
+	if (clicker.bytes >= cost) {
+		clicker.perSec *= addition;
+		clicker.perClick *= addition;
 		clicker.bytes -= cost;
 	}
 }
