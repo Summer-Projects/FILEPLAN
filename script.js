@@ -465,3 +465,10 @@ var idea6 = function() {
 // TODO: Minify code
 // TODO: Fix the changePrice function.
 // TODO: Add music and sounds.
+
+var test = function(name, cost, addition) {
+	if (clicker.bytes >= cost) {
+		clicker.perClick += addition;
+		clicker.bytes -= cost;
+	}
+}
