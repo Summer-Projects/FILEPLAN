@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<title>📄 FILEPLAN</title>
 		<link rel="stylesheet" href="style.css" />
@@ -10,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 		<script async src="script.js"></script>
 	</head>
+
 	<body onload="dateFunc(); showUpgrades(); showCode();">
 		<div class="right">
 			<div class="right_top">
@@ -28,10 +30,10 @@
 				<div id="upgrade4">
 					+100 per second
 
-				<div id="upgrade5">
-					+230 per second
+					<div id="upgrade5">
+						+230 per second
+					</div>
 				</div>
-			</div>
 				<div id="upgrade6">
 					+1,600 per second
 				</div>
@@ -44,23 +46,19 @@
 				</div>
 
 				<div id="upgrade9">
-					Upgrade the Clicker!<br/>
-					+3 per click
+					Upgrade the Clicker!<br/> +3 per click
 				</div>
 
 				<div id="upgrade10">
-					Upgrade the Clicker with more power!<br/>
-					+100 per click
+					Upgrade the Clicker with more power!<br/> +100 per click
 				</div>
 
 				<div id="upgrade11">
-					Upgrade the Clicker with more power then ever before seen!<br/>
-					+1,000 per click
+					Upgrade the Clicker with more power then ever before seen!<br/> +1,000 per click
 				</div>
 
 				<div id="upgrade12">
-					The most ever for clicker upgrades!<br/>
-					+100,0000 per click
+					The most ever for clicker upgrades!<br/> +100,0000 per click
 				</div>
 
 				<div id="upgrade13">
@@ -88,7 +86,7 @@
 				<hr/>
 				<div class="loader">
 					<div class="hide">
-						 <div id="byteUpgradeIdea1" onclick="idea1(), appendText('Clicker Update', 200);" class="byteUpgrades">
+						<div id="byteUpgradeIdea1" onclick=", appendText('Clicker Update', 200);" class="byteUpgrades">
 							<!-- Clicker update -->
 							<img src="images/bytesUpgrades.PNG" alt="upgrade" />
 							<span id="idea1" class="codes">******* ******</span>
@@ -157,7 +155,7 @@
 				</div>
 			</div>
 
-<!-- 			Clicker -->
+			<!-- 			Clicker -->
 			<div class="left_middle">
 				<div id="border">
 					<div id="border2">
@@ -175,7 +173,7 @@
 				<h2>Space Maker</h2>
 				<div class="loader">
 					<div class="hide">
-						<div id="byteUpgradeSec1" onclick="upgrade1(), appendText('Storage Addition', 15);">
+						<div id="byteUpgradeSec1" onclick="upgrade('Upgrade1', 15, 1), appendText('Storage Addition', 15);">
 							<!-- Storage Addition(key) -->
 							<img src="images/Capture3.PNG" alt="upgrade" />
 							<span id="code1" class="codes">******* ********</span>
@@ -183,7 +181,7 @@
 							<br/>
 							<span class="red" id="bytes1">15 bytes</span>
 						</div>
-						<div id="byteUpgradeSec2" class="byteUpgrades" onclick="upgrade2(), appendText('Addition++', 100);">
+						<div id="byteUpgradeSec2" class="byteUpgrades" onclick="upgrade('upgrade2', 100, 7), appendText('Addition++', 100);">
 							<!-- Addition++ -->
 							<img src="images/file1.PNG" alt="upgrade" />
 							<span id="code2" class="codes">**********</span>
@@ -191,16 +189,15 @@
 							<br/>
 							<span class="red" id="bytes2">100 bytes</span>
 						</div>
-						<div id="byteUpgradeSec3" class="byteUpgrades" onclick="upgrade3(), appendText('File system++', 600);">
+						<div id="byteUpgradeSec3" class="byteUpgrades" onclick="upgrade3('upgrade3', 600, 42), appendText('File system++', 600);">
 							<!-- File system+++ -->
 							<img src="images/fileSys.PNG" alt="upgrade" />
 							<span id="code3" class="codes">**** *********</span>
 							<br/>
 							<br/>
-							<span class="red" i
-							d="bytes3">600 bytes</span>
+							<span class="red" i d="bytes3">600 bytes</span>
 						</div>
-						<div id="byteUpgradeSec4" class="byteUpgrades" onclick="upgrade4(), appendText('Search bytes', 10000);">
+						<div id="byteUpgradeSec4" class="byteUpgrades" onclick="upgrade('upgrade4', 10000, 100), appendText('Search bytes', 10000);">
 							<!-- Search bytes -->
 							<img src="images/search.PNG" alt="upgrade" />
 							<span id="code4" class="codes">****** *****</span>
@@ -208,7 +205,7 @@
 							<br/>
 							<span class="red" id="bytes4">10,000 bytes</span>
 						</div>
-						<div id="byteUpgradeSec5" class="byteUpgrades" onclick="upgrade5(), appendText('Files+++', 150000);">
+						<div id="byteUpgradeSec5" class="byteUpgrades" onclick="upgrade('upgrade5', 150000, 230), appendText('Files+++', 150000);">
 							<!-- Files+++ -->
 							<img src="images/files.PNG" alt="upgrade" />
 							<span id="code5" class="codes">********</span>
@@ -216,7 +213,7 @@
 							<br/>
 							<span class="red" id="bytes5">150,000 bytes</span>
 						</div>
-						<div id="byteUpgradeSec6" class="byteUpgrades" onclick="upgrade6(), appendText('Byte-o-rama', 1600000);">
+						<div id="byteUpgradeSec6" class="byteUpgrades" onclick="upgrade('upgrade6', 1600000, 1600), appendText('Byte-o-rama', 1600000);">
 							<!-- Byte-o-rama -->
 							<img src="images/editing.PNG" alt="upgrade" />
 							<span id="code6" class="codes">***********</span>
@@ -224,7 +221,7 @@
 							<br/>
 							<span class="red" id="bytes6">1,600,000 bytes</span>
 						</div>
-						<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade7(), appendText('Searching and create', 21000000);">
+						<div id="byteUpgradeSec7" class="byteUpgrades" onclick="upgrade('upgrade7', 21000000, 8000), appendText('Searching and create', 21000000);">
 							<!-- Searching and create -->
 							<img src="images/searchAnd.PNG" alt="upgrade" />
 							<span id="code7" class="codes">********* *** ******</span>
@@ -232,7 +229,7 @@
 							<br/>
 							<span class="red" id="bytes7">21,000,000 bytes</span>
 						</div>
-						<div id="byteUpgradeSec8" class="byteUpgrades" onclick="upgrade8(), appendText('Searching and create+', 110000000);">
+						<div id="byteUpgradeSec8" class="byteUpgrades" onclick="upgrade('upgrade8', 110000000, 32000), appendText('Searching and create+', 110000000);">
 							<!-- Searching and create+ -->
 							<img src="images/searchAnd++.PNG" alt="upgrade" />
 							<span id="code8" class="codes">********* *** ********</span>
@@ -253,23 +250,25 @@
 					<i class="material-icons">settings</i>
 				</div>
 			</div>
-				<div class="settingsPage">
-					No settings yet!
-				</div>
-				<div class="creditsPage">
-					<h1>Credits</h1>
-					<p>Code created by <a href="https://stevencopeland.github.io/new-website/">StevenCopeland</a></p>
-					<p><a href="https://github.com/StevenCopeland">Github</a> | <a href="https://www.codecademy.com/steven.copeland">CodeCademy</a> | <a href="https://www.duolingo.com/StevenCopeland">Duolingo</a></p>
-					<div id="bordertop">
-					<p>Images: Screen shots by <a href="https://stevencopeland.github.io/new-website/">StevenCopeland</a></p>
-					<p>Screen Shots: My PC screen</p></div>
-				</div>
+			<div class="settingsPage">
+				No settings yet!
 			</div>
-			<div class="mainScreen">
-				<hr/>
-				<h4>File Tree</h4>
-				<h1>FILEPLAN</h1>
+			<div class="creditsPage">
+				<h1>Credits</h1>
+				<p>Code created by <a href="https://stevencopeland.github.io/new-website/">StevenCopeland</a></p>
+				<p><a href="https://github.com/StevenCopeland">Github</a> | <a href="https://www.codecademy.com/steven.copeland">CodeCademy</a> | <a href="https://www.duolingo.com/StevenCopeland">Duolingo</a></p>
+				<div id="bordertop">
+					<p>Images: Screen shots by <a href="https://stevencopeland.github.io/new-website/">StevenCopeland</a></p>
+					<p>Screen Shots: My PC screen</p>
+				</div>
 			</div>
 		</div>
+		<div class="mainScreen">
+			<hr/>
+			<h4>File Tree</h4>
+			<h1>FILEPLAN</h1>
+		</div>
+		</div>
 	</body>
+
 </html>
