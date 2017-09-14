@@ -227,6 +227,7 @@ var showCode = function(amount, id, name) {
 	}
 };
 
+// Game function. Contains all the show code and show upgrade functions.
 var game = function() {
 	showCode(0, "code1", "Storage Addition");
 	showCode(70, "code2", "Addition++");
@@ -282,7 +283,7 @@ spaceGenPerSec();
 
 var secondFunction = function() {
 	setInterval(function() {
-		showCode();
+		game();
 		showUpgrades();
 	}, 100);
 };
