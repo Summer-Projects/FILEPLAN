@@ -164,54 +164,58 @@ function appendText(space, bytes) {
 	}
 };
 
-var showUpgrades = function() {
-	if (clicker.bytes >= 350) {
-		$("#byteUpgradeSec3").show();
+var showUpgrades = function(amount, name) {
+	if (clicker.bytes >= amount) {
+		$(name).show();
 	}
-
-	if (clicker.bytes >= 1000) {
-		$("#byteUpgradeSec4").show();
-	}
-
-	if (clicker.bytes >= 10000) {
-		$("#byteUpgradeSec5").show();
-	}
-
-	if (clicker.bytes >= 4000000) {
-		$("#byteUpgradeSec6").show();
-	}
-
-	if (clicker.bytes >= 50000000) {
-		$("#byteUpgradeSec7").show();
-	}
-
-	if (clicker.bytes >= 100000000) {
-		$("#byteUpgradeSec8").show();
-	}
-
-	if (clicker.bytes >= 70) {
-		$("#byteUpgradeIdea1").show();
-	}
-
-	if (clicker.bytes >= 200) {
-		$("#byteUpgradeIdea2").show();
-	}
-
-	if (clicker.bytes >= 800) {
-		$("#byteUpgradeIdea3").show();
-	}
-
-	if (clicker.bytes >= 8000) {
-		$("#byteUpgradeIdea4").show();
-	}
-
-	if (clicker.bytes >= 900000000) {
-		$("#byteUpgradeIdea5").show();
-	}
-
-	if (clicker.bytes >= 200) {
-		$("#byteUpgradeIdea6").show();
-	}
+	// if (clicker.bytes >= 350) {
+	// 	$("#byteUpgradeSec3").show();
+	// }
+	//
+	// if (clicker.bytes >= 1000) {
+	// 	$("#byteUpgradeSec4").show();
+	// }
+	//
+	// if (clicker.bytes >= 10000) {
+	// 	$("#byteUpgradeSec5").show();
+	// }
+	//
+	// if (clicker.bytes >= 4000000) {
+	// 	$("#byteUpgradeSec6").show();
+	// }
+	//
+	// if (clicker.bytes >= 50000000) {
+	// 	$("#byteUpgradeSec7").show();
+	// }
+	//
+	// if (clicker.bytes >= 100000000) {
+	// 	$("#byteUpgradeSec8").show();
+	// }() {
+	// 	$("#upgrade1").show();
+	//
+	// if (clicker.bytes >= 70) {
+	// 	$("#byteUpgradeIdea1").show();
+	// }
+	//
+	// if (clicker.bytes >= 200) {
+	// 	$("#byteUpgradeIdea2").show();
+	// }
+	//
+	// if (clicker.bytes >= 800) {
+	// 	$("#byteUpgradeIdea3").show();
+	// }
+	//
+	// if (clicker.bytes >= 8000) {
+	// 	$("#byteUpgradeIdea4").show();
+	// }
+	//
+	// if (clicker.bytes >= 900000000) {
+	// 	$("#byteUpgradeIdea5").show();
+	// }
+	//
+	// if (clicker.bytes >= 200) {
+	// 	$("#byteUpgradeIdea6").show();
+	// }
 };
 
 var dateFunc = function() {
