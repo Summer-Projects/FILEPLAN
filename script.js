@@ -164,16 +164,16 @@ function appendText(space, bytes) {
 	}
 };
 
-var showUpgrades = function(amount, name) {
-	if (clicker.bytes >= amount) {
-		$(name).show();
-	};
-};
-
 var dateFunc = function() {
 	setInterval(function() {
 		document.getElementById("dateCount").innerHTML = Date();
 	}, 1000);
+};
+
+var showUpgrades = function(amount, name) {
+	if (clicker.bytes >= amount) {
+		$(name).show();
+	};
 };
 
 var showCode = function(amount, id, name) {
