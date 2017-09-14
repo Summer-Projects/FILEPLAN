@@ -26,7 +26,6 @@ $(document).ready(function() {
 	$("#byteUpgradeIdea3").hide();
 	$("#byteUpgradeIdea4").hide();
 	$("#byteUpgradeIdea5").hide();
-	// $("#byteUpgradeIdea6").hide();
 
 	$("#byteUpgradeSec1").hover(function() {
 		$("#upgrade1").show();
