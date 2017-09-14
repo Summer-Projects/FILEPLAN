@@ -144,7 +144,8 @@ var playAudio1 = function() {
 	document.getElementById(id).innerHTML = price + " bytes";
 };
 */
-// clicker function
+
+// Function for the receipt
 function appendText(space, bytes) {
 	if (clicker.cookies <= 0) {
 		return false;
@@ -170,12 +171,14 @@ var dateFunc = function() {
 	}, 1000);
 };
 
+// showUpgrades main function
 var showUpgrades = function(amount, name) {
 	if (clicker.bytes >= amount) {
 		$(name).show();
 	};
 };
 
+// showCode main function
 var showCode = function(amount, id, name) {
 	if (clicker.bytes >= amount) {
 		var idea = document.getElementById(id).innerHTML = name;
