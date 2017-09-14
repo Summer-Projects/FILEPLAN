@@ -291,11 +291,6 @@ var spaceGenPerSec = function() {
 	}, 1000);
 };
 
-// TODO: Minify code. See idea();
-// TODO: Fix the changePrice function.
-// TODO: Add music and sounds.
-// IDEA: Add graphics.
-
 // Minified code functions
 var idea = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
@@ -334,3 +329,8 @@ var spaceGen = function() {
 	clicker.bytes += clicker.perClick;
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 };
+
+// TODO: Minify code. See idea(), upgrade(), and idea2();
+// TODO: Fix the changePrice function.
+// TODO: Add music and sounds.
+// IDEA: Add graphics.
