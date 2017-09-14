@@ -167,55 +167,7 @@ function appendText(space, bytes) {
 var showUpgrades = function(amount, name) {
 	if (clicker.bytes >= amount) {
 		$(name).show();
-	}
-	// if (clicker.bytes >= 350) {
-	// 	$("#byteUpgradeSec3").show();
-	// }
-	//
-	// if (clicker.bytes >= 1000) {
-	// 	$("#byteUpgradeSec4").show();
-	// }
-	//
-	// if (clicker.bytes >= 10000) {
-	// 	$("#byteUpgradeSec5").show();
-	// }
-	//
-	// if (clicker.bytes >= 4000000) {
-	// 	$("#byteUpgradeSec6").show();
-	// }
-	//
-	// if (clicker.bytes >= 50000000) {
-	// 	$("#byteUpgradeSec7").show();
-	// }
-	//
-	// if (clicker.bytes >= 100000000) {
-	// 	$("#byteUpgradeSec8").show();
-	// }() {
-	// 	$("#upgrade1").show();
-	//
-	// if (clicker.bytes >= 70) {
-	// 	$("#byteUpgradeIdea1").show();
-	// }
-	//
-	// if (clicker.bytes >= 200) {
-	// 	$("#byteUpgradeIdea2").show();
-	// }
-	//
-	// if (clicker.bytes >= 800) {
-	// 	$("#byteUpgradeIdea3").show();
-	// }
-	//
-	// if (clicker.bytes >= 8000) {
-	// 	$("#byteUpgradeIdea4").show();
-	// }
-	//
-	// if (clicker.bytes >= 900000000) {
-	// 	$("#byteUpgradeIdea5").show();
-	// }
-	//
-	// if (clicker.bytes >= 200) {
-	// 	$("#byteUpgradeIdea6").show();
-	// }
+	};
 };
 
 var dateFunc = function() {
@@ -232,6 +184,7 @@ var showCode = function(amount, id, name) {
 
 // Game function. Contains all the show code and show upgrade functions.
 var game = function() {
+	// Show code function calls
 	showCode(0, "code1", "Storage Addition");
 	showCode(70, "code2", "Addition++");
 	showCode(550, "code3", "File system+++");
@@ -245,6 +198,19 @@ var game = function() {
 	showCode(900, "idea3", "Clicker update+++");
 	showCode(9000, "idea4", "Clicker update++++");
 	showCode(950000000, "idea5", "Super Computer");
+
+	// Upgrade function calls
+	showUpgrades(350, "#byteUpgradeSec3");
+	showUpgrades(1000, "#byteUpgradeSec4");
+	showUpgrades(10000, "#byteUpgradeSec5");
+	showUpgrades(400000, "#byteUpgradeSec6");
+	showUpgrades(5000000, "#byteUpgradeSec7");
+	showUpgrades(10000000, "#byteUpgradeSec8");
+	showUpgrades(70, "#byteUpgradeIdea1");
+	showUpgrades(200, "#byteUpgradeIdea2");
+	showUpgrades(800, "#byteUpgradeIdea3");
+	showUpgrades(8000, "#byteUpgradeIdea4");
+	showUpgrades(900000000, "#byteUpgradeIdea5");
 };
 
 var invalid = function() {
