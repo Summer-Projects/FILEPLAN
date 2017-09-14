@@ -227,55 +227,55 @@ var showCode = function(amount, id, name) {
 	}
 	// if (clicker.bytes >= 0) {
 	// 	var code1 = document.getElementById("code1").innerHTML = "Storage Addition";
-	// }
+	// } showCode(0, "code1", "Storage Addition");
 	//
 	// if (clicker.bytes >= 70) {
 	// 	var code2 = document.getElementById("code2").innerHTML = "Addition++";
-	// }
+	// } showCode(70, "code2", "Addition++");
 	//
 	// if (clicker.bytes >= 550) {
 	// 	var code3 = document.getElementById("code3").innerHTML = "File system+++";
-	// }
+	// } showCode(550, "code3", "File system+++");
 	//
 	// if (clicker.bytes >= 9950) {
 	// 	var code4 = document.getElementById("code4").innerHTML = "Search bytes";
-	// }
+	// } showCode(9950, "code4", "Search bytes");
 	//
 	// if (clicker.bytes >= 149950) {
 	// 	var code5 = document.getElementById("code5").innerHTML = "Files+++";
-	// }
+	// } showCode(149950, "code5", "Files+++");
 	//
 	// if (clicker.bytes >= 4999950) {
 	// 	var code6 = document.getElementById("code6").innerHTML = "Byte-o-rama";
-	// }
+	// } showCode(4999950, "code6", "Byte-o-rama");
 	//
 	// if (clicker.bytes >= 74999950) {
 	// 	var code7 = document.getElementById("code7").innerHTML = "Searching and create";
-	// }
+	// } showCode(74999950, "code7", "Searching and create");
 	//
 	// if (clicker.bytes >= 129999950) {
 	// 	var code8 = document.getElementById("code8").innerHTML = "Searching and create+";
-	// }
+	// } showCode(129999950, "code8", "Searching and create+");
 	//
 	// if (clicker.bytes >= 100) {
 	// 	var idea1 = document.getElementById("idea1").innerHTML = "Clicker update";
-	// }
+	// } showCode(100, "idea1", "Clicker update");
 	//
 	// if (clicker.bytes >= 400) {
 	// 	var idea2 = document.getElementById("idea2").innerHTML = "Clicker update++";
-	// }
+	// } showCode(400, "idea2", "Clicker update++");
 	//
 	// if (clicker.bytes >= 900) {
 	// 	var idea3 = document.getElementById("idea3").innerHTML = "Clicker update+++";
-	// }
+	// } showCode(900, "idea3", "Clicker update+++");
 	//
 	// if (clicker.bytes >= 9000) {
 	// 	var idea4 = document.getElementById("idea4").innerHTML = "Clicker update++++";
-	// }
+	// } showCode(9000, "idea4", "Clicker update++++");
 	//
 	// if (clicker.bytes >= 950000000) {
 	// 	var idea5 = document.getElementById("idea5").innerHTML = "Super Computer";
-	// }
+	// } showCode(950000000, "idea5", "Super Computer");
 };
 
 var invalid = function() {
@@ -333,3 +333,8 @@ var spaceGen = function() {
 // TODO: Fix the changePrice function.
 // TODO: Add music and sounds.
 // IDEA: Add graphics.
+
+/*
+IDEA code:
+setInterval(function() { showCode(80, "idea1", "one") },10);
+*/
