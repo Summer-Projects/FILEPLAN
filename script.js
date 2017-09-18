@@ -187,7 +187,7 @@ var showCode = function(amount, id, name) {
 
 // Change price function
 var changePrice = function(originalMoney) {
-	originalMoney * 2;
+	originalMoney * 2
 }
 
 // Game function. Contains all the show code and show upgrade functions.
@@ -223,7 +223,7 @@ var game = function() {
 
 var invalid = function() {
 	alert("Sorry! You don't have enough space to buy a space upgrade!");
-};
+};;
 
 var spaceGenPerSec = function() {
 	setInterval(function() {
