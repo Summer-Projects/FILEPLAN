@@ -185,6 +185,11 @@ var showCode = function(amount, id, name) {
 	}
 };
 
+// Change price function
+var changePrice = function(originalMoney) {
+	originalMoney * 2;
+}
+
 // Game function. Contains all the show code and show upgrade functions.
 var game = function() {
 	// Show code function calls
