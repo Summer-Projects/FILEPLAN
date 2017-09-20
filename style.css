@@ -133,8 +133,8 @@ img {
 }
 
 #perSecond {
-		text-align:right;
-		display: block;
+	text-align:right;
+	display: block;
     font-size: 0.67em;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -144,8 +144,8 @@ img {
 }
 
 #upgrades {
-		text-align:right;
-		display: block;
+	text-align:right;
+	display: block;
     font-size: 0.67em;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 1em;
@@ -155,15 +155,15 @@ img {
 }
 
 #dateWord {
-		text-align:right;
+	text-align:right;
 }
 
 #memory {
-		text-align:left;
+	text-align:left;
 }
 
 .h6 {
-		display: block;
+	display: block;
     font-size: 0.67em;
     -webkit-margin-before: 2.33em;
     -webkit-margin-after: 2.33em;
@@ -173,7 +173,7 @@ img {
 }
 
 h2 {
-		-webkit-margin-before: 0em;
+	-webkit-margin-before: 0em;
     -webkit-margin-after: 5px;
     -webkit-margin-start: 20px;
     -webkit-margin-end: 0px;
@@ -195,8 +195,8 @@ h2 {
 }
 
 #byteUpgradeSec1 img {
-		float:left;
-		-webkit-margin-before: 3px;
+	float:left;
+	-webkit-margin-before: 3px;
     -webkit-margin-after: 3px;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
@@ -204,14 +204,14 @@ h2 {
 }
 
 #code1 {
-		font-size: 18px;
+	font-size: 18px;
     font-weight: 70px;
     letter-spacing: 1px;
 }
 
 .byteUpgrades {
-		border-bottom:1px solid white;
-		-webkit-margin-start: 20px;
+	border-bottom:1px solid white;
+	-webkit-margin-start: 20px;
     -webkit-margin-end: 20px;
     -webkit-margin-before: 5px;
     -webkit-margin-after: 5px;
@@ -219,8 +219,8 @@ h2 {
 }
 
 .byteUpgrades img {
-		float:left;
-		-webkit-margin-before: 3px;
+	float:left;
+	-webkit-margin-before: 3px;
     -webkit-margin-after: 3px;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
