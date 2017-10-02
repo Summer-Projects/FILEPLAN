@@ -253,7 +253,7 @@ function sumDecimals(n1, n2) {
 	let bIntegerPart = b.indexOf(".") !== -1? b.indexOf(".") - 1 : b.length; 
 	let bFractalPart = b.indexOf(".") !== -1? (b.length - b.indexOf(".")) : 0;
 	let maxLength = Math.max(aIntegerPart,bIntegerPart) + Math.max(aFractalPart,bFractalPart);
-	return Number((n1 + n2).toPrecision(maxLength)));
+	return Number((n1 + n2).toPrecision(maxLength));
 }
 
 var upgrade = function(name, cost, addition) {
