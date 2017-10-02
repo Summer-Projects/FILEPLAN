@@ -252,7 +252,7 @@ function sumDecimals(n1, n2) {
   let aFractalPart = a.indexOf('.') !== -1? (a.length - a.indexOf('.')) : 0;
   let bIntegerPart = b.indexOf('.') !== -1? b.indexOf('.') - 1 : b.length; 
   let bFractalPart = b.indexOf('.') !== -1? (b.length - b.indexOf('.')) : 0;
-  let maxLength = Math.max(aIntegerPart,bIntegerPart) + Math.max(aFractalPart,bFractalPart);
+  let maxLength = Math.max(aIntegerPart,bIntegerPart) + Math.max(aFractalPart,bFractalPart) + 1;
   return Number((n1 + n2).toPrecision(maxLength));
 }
 
