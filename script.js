@@ -228,7 +228,7 @@ var invalid = function() {
 var spaceGenPerSec = function() {
 	setInterval(function() {
 		var second = document.getElementById("perSecond").innerHTML = "per second: " + clicker.perSec + "";
-		clicker.bytes += clicker.perSec;
+		clicker.bytes = sumDecimals(clicker.bytes, clicker.perSec);
 		var perSec = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 	}, 1000);
 };
@@ -236,8 +236,8 @@ var spaceGenPerSec = function() {
 // Minified code functions
 var idea = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
-		clicker.perClick += addition;
-		clicker.bytes -= cost;
+		clicker.perClick = sumDecimals(clicker.perClick, addition);
+		clicker.bytes = sumDecimals(clicker.bytes, -cost);		
 	}
 }
 
@@ -259,7 +259,7 @@ function sumDecimals(n1, n2) {
 var upgrade = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
 		clicker.perSec = sumDecimals(clicker.perSec, addition);
-		clicker.bytes -= cost;
+		clicker.bytes = sumDecimals(clicker.bytes, -cost);
 	}
 }
 
@@ -267,7 +267,7 @@ var idea2 = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
 		clicker.perSec *= addition;
 		clicker.perClick *= addition;
-		clicker.bytes -= cost;
+		clicker.bytes = sumDecimals(clicker.bytes, -cost);
 	}
 }
 
@@ -283,7 +283,7 @@ var secondFunction = function() {
 secondFunction();
 
 var spaceGen = function() {
-	clicker.bytes += clicker.perClick;
+	clicker.bytes = sumDecimals(clicker.bytes, clicker.perClick);
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 };
 
