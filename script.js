@@ -241,9 +241,24 @@ var idea = function(name, cost, addition) {
 	}
 }
 
+/**
+ * Return the sum of two numbers,
+ * fixing floating point errors
+ */
+function sumDecimals(n1, n2) {
+	a = n1+"";
+	b = n2+"";
+	let aIntegerPart = a.indexOf(".") !== -1? a.indexOf(".") - 1 : a.length; 
+	let aFractalPart = a.indexOf(".") !== -1? (a.length - a.indexOf(".")) : 0;
+	let bIntegerPart = b.indexOf(".") !== -1? b.indexOf(".") - 1 : b.length; 
+	let bFractalPart = b.indexOf(".") !== -1? (b.length - b.indexOf(".")) : 0;
+	let maxLength = Math.max(aIntegerPart,bIntegerPart) + Math.max(aFractalPart,bFractalPart);
+	return Number((n1 + n2).toPrecision(maxLength)));
+}
+
 var upgrade = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
-		clicker.perSec += addition;
+		clicker.perSec = sumDecimals(clicker.perSec, addition);
 		clicker.bytes -= cost;
 	}
 }
