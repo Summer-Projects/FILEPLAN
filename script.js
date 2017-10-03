@@ -1,115 +1,79 @@
 $(document).ready(function() {
 	$(".settingsPage").hide();
 	$(".creditsPage").hide();
-	$("#upgrade1").hide();
-	$("#upgrade2").hide();
-	$("#upgrade3").hide();
-	$("#upgrade4").hide();
-	$("#upgrade5").hide();
-	$("#upgrade6").hide();
-	$("#upgrade7").hide();
-	$("#upgrade8").hide();
-	$("#upgrade9").hide();
-	$("#upgrade10").hide();
-	$("#upgrade11").hide();
-	$("#upgrade12").hide();
-	$("#upgrade13").hide();
-	$("#upgrade14").hide();
-	$("#byteUpgradeSec3").hide();
-	$("#byteUpgradeSec4").hide();
-	$("#byteUpgradeSec5").hide();
-	$("#byteUpgradeSec6").hide();
-	$("#byteUpgradeSec7").hide();
-	$("#byteUpgradeSec8").hide();
-	$("#byteUpgradeIdea1").hide();
-	$("#byteUpgradeIdea2").hide();
-	$("#byteUpgradeIdea3").hide();
-	$("#byteUpgradeIdea4").hide();
-	$("#byteUpgradeIdea5").hide();
+	upgradeArray=[];
+	byteUpgradeSecArray=[];
+	byteUpgradeIdeaArray=[];
+	
+	function fillUpgradeArray()
+	{
+		var counter = 1;
+		while(counter<=14)
+		{
+			upgradeArray.push('#upgrade'+counter);
+			counter++
+		}
+	}
 
-	$("#byteUpgradeSec1").hover(function() {
-		$("#upgrade1").show();
-	}, function() {
-		$("#upgrade1").hide();
-	});
+fillUpgradeArray()
 
-	$("#byteUpgradeSec2").hover(function() {
-		$("#upgrade2").show();
-	}, function() {
-		$("#upgrade2").hide();
-	});
+	function fillByteUpgradeSec()
+	{
+		var counter=3;
+		while(counter<=8)
+		{
+			byteUpgradeSecArray.push("#byteUpgradeSec"+counter);
+			counter++
+		}
+	}
 
-	$("#byteUpgradeSec3").hover(function() {
-		$("#upgrade3").show();
-	}, function() {
-		$("#upgrade3").hide();
-	});
+fillByteUpgradeSec()
 
-	$("#byteUpgradeSec4").hover(function() {
-		$("#upgrade4").show();
-	}, function() {
-		$("#upgrade4").hide();
-	});
+	function fillByteUpgradeIdeaArray()
+	{
+		var counter=1;
+		while(counter<=5)
+		{
+			byteUpgradeIdeaArray.push("#byteUpgradeIdea"+counter);
+			counter++
+		}	
+	}
 
-	$("#byteUpgradeSec5").hover(function() {
-		$("#upgrade5").show();
-	}, function() {
-		$("#upgrade5").hide();
-	});
+fillByteUpgradeIdeaArray()
+	
+	function hideThem(a)
+	{
+		for(i=0;i<=a.length;i++)
+		{
+			$($(a[i])).hide();
+		}
+	}
+	
+hideThem(upgradeArray);
+hideThem(byteUpgradeSecArray);
+hideThem(byteUpgradeIdeaArray);
 
-	$("#byteUpgradeSec6").hover(function() {
-		$("#upgrade6").show();
-	}, function() {
-		$("#upgrade6").hide();
-	});
+	function hoverThem(a,b){
+		$($(a)).hover(function(){
+			$($(b)).toggle();
+		})
+	}
+	
+	hoverThem($("#byteUpgradeSec1"),upgradeArray[0]);
+	hoverThem($("#byteUpgradeSec2"),upgradeArray[1]);
+	hoverThem(byteUpgradeSecArray[0],upgradeArray[2]);
+	hoverThem(byteUpgradeSecArray[1],upgradeArray[3]);
+	hoverThem(byteUpgradeSecArray[2],upgradeArray[4]);
+	hoverThem(byteUpgradeSecArray[3],upgradeArray[5]);
+	hoverThem(byteUpgradeSecArray[4],upgradeArray[6]);
+	hoverThem(byteUpgradeSecArray[5],upgradeArray[7]);
+	hoverThem(byteUpgradeIdeaArray[0],upgradeArray[8]);
+	hoverThem(byteUpgradeIdeaArray[1],upgradeArray[9]);
+	hoverThem(byteUpgradeIdeaArray[2],upgradeArray[10]);
+	hoverThem(byteUpgradeIdeaArray[3],upgradeArray[11]);
+	hoverThem(byteUpgradeIdeaArray[4],upgradeArray[12]);
+	hoverThem(byteUpgradeIdeaArray[5],upgradeArray[13]);
 
-	$("#byteUpgradeSec7").hover(function() {
-		$("#upgrade7").show();
-	}, function() {
-		$("#upgrade7").hide();
-	});
-
-	$("#byteUpgradeSec8").hover(function() {
-		$("#upgrade8").show();
-	}, function() {
-		$("#upgrade8").hide();
-	});
-
-	$("#byteUpgradeIdea1").hover(function() {
-		$("#upgrade9").show();
-	}, function() {
-		$("#upgrade9").hide();
-	});
-
-	$("#byteUpgradeIdea2").hover(function() {
-		$("#upgrade10").show();
-	}, function() {
-		$("#upgrade10").hide();
-	});
-
-	$("#byteUpgradeIdea3").hover(function() {
-		$("#upgrade11").show();
-	}, function() {
-		$("#upgrade11").hide();
-	});
-
-	$("#byteUpgradeIdea4").hover(function() {
-		$("#upgrade12").show();
-	}, function() {
-		$("#upgrade12").hide();
-	});
-
-	$("#byteUpgradeIdea5").hover(function() {
-		$("#upgrade13").show();
-	}, function() {
-		$("#upgrade13").hide();
-	});
-
-	$("#byteUpgradeIdea6").hover(function() {
-		$("#upgrade14").show();
-	}, function() {
-		$("#upgrade14").hide();
-	});
 });
 
 function Bytes() {
