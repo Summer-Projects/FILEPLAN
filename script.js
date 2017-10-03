@@ -1,115 +1,79 @@
 $(document).ready(function() {
 	$(".settingsPage").hide();
 	$(".creditsPage").hide();
-	$("#upgrade1").hide();
-	$("#upgrade2").hide();
-	$("#upgrade3").hide();
-	$("#upgrade4").hide();
-	$("#upgrade5").hide();
-	$("#upgrade6").hide();
-	$("#upgrade7").hide();
-	$("#upgrade8").hide();
-	$("#upgrade9").hide();
-	$("#upgrade10").hide();
-	$("#upgrade11").hide();
-	$("#upgrade12").hide();
-	$("#upgrade13").hide();
-	$("#upgrade14").hide();
-	$("#byteUpgradeSec3").hide();
-	$("#byteUpgradeSec4").hide();
-	$("#byteUpgradeSec5").hide();
-	$("#byteUpgradeSec6").hide();
-	$("#byteUpgradeSec7").hide();
-	$("#byteUpgradeSec8").hide();
-	$("#byteUpgradeIdea1").hide();
-	$("#byteUpgradeIdea2").hide();
-	$("#byteUpgradeIdea3").hide();
-	$("#byteUpgradeIdea4").hide();
-	$("#byteUpgradeIdea5").hide();
+	upgradeArray=[];
+	byteUpgradeSecArray=[];
+	byteUpgradeIdeaArray=[];
+	
+	function fillUpgradeArray()
+	{
+		var counter = 1;
+		while(counter<=14)
+		{
+			upgradeArray.push('#upgrade'+counter);
+			counter++
+		}
+	}
 
-	$("#byteUpgradeSec1").hover(function() {
-		$("#upgrade1").show();
-	}, function() {
-		$("#upgrade1").hide();
-	});
+fillUpgradeArray()
 
-	$("#byteUpgradeSec2").hover(function() {
-		$("#upgrade2").show();
-	}, function() {
-		$("#upgrade2").hide();
-	});
+	function fillByteUpgradeSec()
+	{
+		var counter=3;
+		while(counter<=8)
+		{
+			byteUpgradeSecArray.push("#byteUpgradeSec"+counter);
+			counter++
+		}
+	}
 
-	$("#byteUpgradeSec3").hover(function() {
-		$("#upgrade3").show();
-	}, function() {
-		$("#upgrade3").hide();
-	});
+fillByteUpgradeSec()
 
-	$("#byteUpgradeSec4").hover(function() {
-		$("#upgrade4").show();
-	}, function() {
-		$("#upgrade4").hide();
-	});
+	function fillByteUpgradeIdeaArray()
+	{
+		var counter=1;
+		while(counter<=5)
+		{
+			byteUpgradeIdeaArray.push("#byteUpgradeIdea"+counter);
+			counter++
+		}	
+	}
 
-	$("#byteUpgradeSec5").hover(function() {
-		$("#upgrade5").show();
-	}, function() {
-		$("#upgrade5").hide();
-	});
+fillByteUpgradeIdeaArray()
+	
+	function hideThem(a)
+	{
+		for(i=0;i<=a.length;i++)
+		{
+			$($(a[i])).hide();
+		}
+	}
+	
+hideThem(upgradeArray);
+hideThem(byteUpgradeSecArray);
+hideThem(byteUpgradeIdeaArray);
 
-	$("#byteUpgradeSec6").hover(function() {
-		$("#upgrade6").show();
-	}, function() {
-		$("#upgrade6").hide();
-	});
+	function hoverThem(a,b){
+		$($(a)).hover(function(){
+			$($(b)).toggle();
+		})
+	}
+	
+	hoverThem($("#byteUpgradeSec1"),upgradeArray[0]);
+	hoverThem($("#byteUpgradeSec2"),upgradeArray[1]);
+	hoverThem(byteUpgradeSecArray[0],upgradeArray[2]);
+	hoverThem(byteUpgradeSecArray[1],upgradeArray[3]);
+	hoverThem(byteUpgradeSecArray[2],upgradeArray[4]);
+	hoverThem(byteUpgradeSecArray[3],upgradeArray[5]);
+	hoverThem(byteUpgradeSecArray[4],upgradeArray[6]);
+	hoverThem(byteUpgradeSecArray[5],upgradeArray[7]);
+	hoverThem(byteUpgradeIdeaArray[0],upgradeArray[8]);
+	hoverThem(byteUpgradeIdeaArray[1],upgradeArray[9]);
+	hoverThem(byteUpgradeIdeaArray[2],upgradeArray[10]);
+	hoverThem(byteUpgradeIdeaArray[3],upgradeArray[11]);
+	hoverThem(byteUpgradeIdeaArray[4],upgradeArray[12]);
+	hoverThem(byteUpgradeIdeaArray[5],upgradeArray[13]);
 
-	$("#byteUpgradeSec7").hover(function() {
-		$("#upgrade7").show();
-	}, function() {
-		$("#upgrade7").hide();
-	});
-
-	$("#byteUpgradeSec8").hover(function() {
-		$("#upgrade8").show();
-	}, function() {
-		$("#upgrade8").hide();
-	});
-
-	$("#byteUpgradeIdea1").hover(function() {
-		$("#upgrade9").show();
-	}, function() {
-		$("#upgrade9").hide();
-	});
-
-	$("#byteUpgradeIdea2").hover(function() {
-		$("#upgrade10").show();
-	}, function() {
-		$("#upgrade10").hide();
-	});
-
-	$("#byteUpgradeIdea3").hover(function() {
-		$("#upgrade11").show();
-	}, function() {
-		$("#upgrade11").hide();
-	});
-
-	$("#byteUpgradeIdea4").hover(function() {
-		$("#upgrade12").show();
-	}, function() {
-		$("#upgrade12").hide();
-	});
-
-	$("#byteUpgradeIdea5").hover(function() {
-		$("#upgrade13").show();
-	}, function() {
-		$("#upgrade13").hide();
-	});
-
-	$("#byteUpgradeIdea6").hover(function() {
-		$("#upgrade14").show();
-	}, function() {
-		$("#upgrade14").hide();
-	});
 });
 
 function Bytes() {
@@ -228,7 +192,7 @@ var invalid = function() {
 var spaceGenPerSec = function() {
 	setInterval(function() {
 		var second = document.getElementById("perSecond").innerHTML = "per second: " + clicker.perSec + "";
-		clicker.bytes += clicker.perSec;
+		clicker.bytes = sumDecimals(clicker.bytes, clicker.perSec);
 		var perSec = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 	}, 1000);
 };
@@ -236,15 +200,30 @@ var spaceGenPerSec = function() {
 // Minified code functions
 var idea = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
-		clicker.perClick += addition;
-		clicker.bytes -= cost;
+		clicker.perClick = sumDecimals(clicker.perClick, addition);
+		clicker.bytes = sumDecimals(clicker.bytes, -cost);		
 	}
+}
+
+/**
+ * Return the sum of two numbers,
+ * fixing floating point errors
+ */
+function sumDecimals(n1, n2) {
+  let a = n1+'';
+  let b = n2+'';
+  let aIntegerPart = a.indexOf('.') !== -1? a.indexOf('.') - 1 : a.length; 
+  let aFractalPart = a.indexOf('.') !== -1? (a.length - a.indexOf('.')) : 0;
+  let bIntegerPart = b.indexOf('.') !== -1? b.indexOf('.') - 1 : b.length; 
+  let bFractalPart = b.indexOf('.') !== -1? (b.length - b.indexOf('.')) : 0;
+  let maxLength = Math.max(aIntegerPart,bIntegerPart) + Math.max(aFractalPart,bFractalPart) + 1;
+  return Number((n1 + n2).toPrecision(maxLength));
 }
 
 var upgrade = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
-		clicker.perSec += addition;
-		clicker.bytes -= cost;
+		clicker.perSec = sumDecimals(clicker.perSec, addition);
+		clicker.bytes = sumDecimals(clicker.bytes, -cost);
 	}
 }
 
@@ -252,7 +231,7 @@ var idea2 = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
 		clicker.perSec *= addition;
 		clicker.perClick *= addition;
-		clicker.bytes -= cost;
+		clicker.bytes = sumDecimals(clicker.bytes, -cost);
 	}
 }
 
@@ -268,7 +247,7 @@ var secondFunction = function() {
 secondFunction();
 
 var spaceGen = function() {
-	clicker.bytes += clicker.perClick;
+	clicker.bytes = sumDecimals(clicker.bytes, clicker.perClick);
 	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 };
 

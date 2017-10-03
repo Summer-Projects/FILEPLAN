@@ -11,7 +11,12 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 		<script async src="script.js"></script>
 	</head>
-
+	<div id="music">
+		<audio controls autoplay repeat>
+			<source src="Mistake the Getaway.ogg" type="audio/ogg">
+			<source src="Mistake the Getaway.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 	<body onload="dateFunc(); showUpgrades(); showCode();">
 		<div class="right">
 			<div class="right_top">
@@ -173,7 +178,7 @@
 				<h2>Space Maker</h2>
 				<div class="loader">
 					<div class="hide">
-						<div id="byteUpgradeSec1" onclick="upgrade('Upgrade1', 15, 1), appendText('Storage Addition', 15);">
+						<div id="byteUpgradeSec1" onclick="upgrade('Upgrade1', 15, 0.1), appendText('Storage Addition', 15);">
 							<!-- Storage Addition(key) -->
 							<img src="images/Capture3.PNG" alt="upgrade" />
 							<span id="code1" class="codes">******* ********</span>
