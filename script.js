@@ -4,7 +4,7 @@ $(document).ready(function() {
 	upgradeArray=[];
 	byteUpgradeSecArray=[];
 	byteUpgradeIdeaArray=[];
-
+	
 	function fillUpgradeArray()
 	{
 		var counter = 1;
@@ -36,11 +36,11 @@ fillByteUpgradeSec()
 		{
 			byteUpgradeIdeaArray.push("#byteUpgradeIdea"+counter);
 			counter++
-		}
+		}	
 	}
 
 fillByteUpgradeIdeaArray()
-
+	
 	function hideThem(a)
 	{
 		for(i=0;i<=a.length;i++)
@@ -48,7 +48,7 @@ fillByteUpgradeIdeaArray()
 			$($(a[i])).hide();
 		}
 	}
-
+	
 hideThem(upgradeArray);
 hideThem(byteUpgradeSecArray);
 hideThem(byteUpgradeIdeaArray);
@@ -58,7 +58,7 @@ hideThem(byteUpgradeIdeaArray);
 			$($(b)).toggle();
 		})
 	}
-
+	
 	hoverThem($("#byteUpgradeSec1"),upgradeArray[0]);
 	hoverThem($("#byteUpgradeSec2"),upgradeArray[1]);
 	hoverThem(byteUpgradeSecArray[0],upgradeArray[2]);
@@ -78,10 +78,10 @@ hideThem(byteUpgradeIdeaArray);
 
 function Bytes() {
 	this.bytes = 0,
-	this.upgrades = 0,
-	this.perClick = 1,
-	this.perSec = 0,
-	this.upgrade1 = 1;
+		this.upgrades = 0,
+		this.perClick = 1,
+		this.perSec = 0,
+		this.upgrade1 = 1;
 }
 
 // var upgrade1 = 15;
@@ -97,7 +97,7 @@ var clicker = new Bytes();
 var count = 0;
 var total = 0
 
-/*var sound1 = $("#myAudio1");
+/*var sound1 = document.getElementById("myAudio1");
 
 var playAudio1 = function() {
     sound1.play();
@@ -105,7 +105,7 @@ var playAudio1 = function() {
 
 /*var changePrice = function(price, id) {
 	price *= 2;
-	$('#' + id).innerHTML = price + " bytes";
+	document.getElementById(id).innerHTML = price + " bytes";
 };
 */
 
@@ -131,7 +131,7 @@ function appendText(space, bytes) {
 
 var dateFunc = function() {
 	setInterval(function() {
-		$("#dateCount").innerHTML = Date();
+		document.getElementById("dateCount").innerHTML = Date();
 	}, 1000);
 };
 
@@ -145,7 +145,7 @@ var showUpgrades = function(amount, name) {
 // showCode main function
 var showCode = function(amount, id, name) {
 	if (clicker.bytes >= amount) {
-		var idea = $('#' + id).innerHTML = name;
+		var idea = document.getElementById(id).innerHTML = name;
 	}
 };
 
@@ -191,9 +191,9 @@ var invalid = function() {
 
 var spaceGenPerSec = function() {
 	setInterval(function() {
-		var second = $("#perSecond").innerHTML = "per second: " + clicker.perSec + "";
+		var second = document.getElementById("perSecond").innerHTML = "per second: " + clicker.perSec + "";
 		clicker.bytes = sumDecimals(clicker.bytes, clicker.perSec);
-		var perSec = $("#bytes").innerHTML = "Bytes: " + clicker.bytes + "";
+		var perSec = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 	}, 1000);
 };
 
@@ -201,7 +201,7 @@ var spaceGenPerSec = function() {
 var idea = function(name, cost, addition) {
 	if (clicker.bytes >= cost) {
 		clicker.perClick = sumDecimals(clicker.perClick, addition);
-		clicker.bytes = sumDecimals(clicker.bytes, -cost);
+		clicker.bytes = sumDecimals(clicker.bytes, -cost);		
 	}
 }
 
@@ -212,9 +212,9 @@ var idea = function(name, cost, addition) {
 function sumDecimals(n1, n2) {
   let a = n1+'';
   let b = n2+'';
-  let aIntegerPart = a.indexOf('.') !== -1? a.indexOf('.') - 1 : a.length;
+  let aIntegerPart = a.indexOf('.') !== -1? a.indexOf('.') - 1 : a.length; 
   let aFractalPart = a.indexOf('.') !== -1? (a.length - a.indexOf('.')) : 0;
-  let bIntegerPart = b.indexOf('.') !== -1? b.indexOf('.') - 1 : b.length;
+  let bIntegerPart = b.indexOf('.') !== -1? b.indexOf('.') - 1 : b.length; 
   let bFractalPart = b.indexOf('.') !== -1? (b.length - b.indexOf('.')) : 0;
   let maxLength = Math.max(aIntegerPart,bIntegerPart) + Math.max(aFractalPart,bFractalPart) + 1;
   return Number((n1 + n2).toPrecision(maxLength));
@@ -248,7 +248,7 @@ secondFunction();
 
 var spaceGen = function() {
 	clicker.bytes = sumDecimals(clicker.bytes, clicker.perClick);
-	var count = $("#bytes").innerHTML = "Bytes: " + clicker.bytes + "";
+	var count = document.getElementById("bytes").innerHTML = "Bytes: " + clicker.bytes + "";
 };
 
 // TODO: Minify code. See idea(), upgrade(), and idea2();
